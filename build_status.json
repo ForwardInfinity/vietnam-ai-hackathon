@@ -1,0 +1,13 @@
+{
+  "updated_at": "2025-07-18",
+  "components": [
+    {"name": "F1 — Nền tảng: skeleton, DDL + trigger, API stub, UI shell, CI/CD lên VPS", "status": "in_progress", "note": "Giai đoạn A: deploy walking skeleton"},
+    {"name": "F1 — Contracts: schemas 1:1 DDL, LLM gateway, CONTRACTS.md", "status": "pending", "note": "Giai đoạn B"},
+    {"name": "F2 — Corpus: văn bản gốc + manifest đếm tay + fixtures", "status": "pending", "note": ""},
+    {"name": "F3 — Ingest: parser cây, citation→edge, op extraction", "status": "pending", "note": ""},
+    {"name": "F4 — Engine: fold, windows, scope, snapshot, conflict", "status": "pending", "note": ""},
+    {"name": "F5 — Retrieval + Answering: hybrid, closure, compiler, verifier 2 tầng", "status": "pending", "note": ""},
+    {"name": "F6 — Admin UI: ratify queue, batch, backlog, conflict kanban", "status": "pending", "note": ""},
+    {"name": "F7 — Eval: golden set đối kháng + baseline naive RAG", "status": "pending", "note": ""}
+  ]
+}

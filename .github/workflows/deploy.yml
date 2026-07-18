@@ -1,0 +1,84 @@
+name: CI-CD
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Sync deps
+        run: uv sync --frozen
+      - name: Smoke (gate merge của mọi session)
+        run: make smoke
+      - name: Heavy tests không-LLM (INV-1 trigger trên Postgres service)
+        env:
+          TEST_DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/postgres
+        run: uv run pytest -q -m "heavy and not llm_live"
+
+  deploy:
+    needs: test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: false
+    env:
+      DOMAIN: 152-42-242-127.sslip.io
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          ssh-keyscan -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts 2>/dev/null
+      - name: Ship secrets rồi deploy (build xong mới thay container; fail => job đỏ)
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          umask 077
+          printf 'OPENROUTER_API_KEY=%s\nDEEPSEEK_API_KEY=%s\n' "$OPENROUTER_API_KEY" "$DEEPSEEK_API_KEY" > /tmp/env.secrets
+          ssh -i ~/.ssh/id_deploy "root@$VPS_HOST" 'mkdir -p /opt/app'
+          scp -i ~/.ssh/id_deploy /tmp/env.secrets "root@$VPS_HOST:/opt/app/.env.secrets"
+          ssh -i ~/.ssh/id_deploy "root@$VPS_HOST" 'bash -s' < deploy/remote_deploy.sh
+      - name: Verify URL sống qua HTTPS (từ ngoài VPS)
+        run: |
+          for i in $(seq 1 36); do
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 10 "https://$DOMAIN/health" || true)
+            echo "attempt $i: HTTP $code"
+            if [ "$code" = "200" ]; then
+              echo "LIVE: https://$DOMAIN"
+              curl -s "https://$DOMAIN/health"
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "Health check FAILED sau 3 phút — container cũ (nếu có) vẫn đang chạy trên VPS"
+          exit 1

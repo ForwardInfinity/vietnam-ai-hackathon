@@ -1,0 +1,21 @@
+152-42-242-127.sslip.io {
+	# /health đi thẳng tới api (không strip) — QA mở https://<domain>/health
+	handle /health {
+		reverse_proxy api:8000
+	}
+
+	# /api/* -> api, strip prefix; api chạy uvicorn --root-path /api nên /api/docs hoạt động
+	handle_path /api/* {
+		reverse_proxy api:8000
+	}
+
+	# /admin* -> placeholder (F6 sẽ thay bằng admin console Streamlit)
+	handle /admin* {
+		respond "LawState admin console — đang xây dựng (F6). Quay lại sau." 200
+	}
+
+	# còn lại -> chat UI
+	handle {
+		reverse_proxy ui:8501
+	}
+}
