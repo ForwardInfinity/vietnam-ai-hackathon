@@ -38,7 +38,12 @@ jobs:
       - name: Heavy tests không-LLM (INV-1 trigger trên Postgres service)
         env:
           TEST_DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/postgres
-        run: uv run pytest -q -m "heavy and not llm_live"
+        run: |
+          set +e
+          uv run pytest -q -m "heavy and not llm_live"
+          code=$?
+          if [ "$code" = "5" ]; then echo "chưa có heavy test nào (exit 5) — OK"; exit 0; fi
+          exit $code
 
   deploy:
     needs: test
