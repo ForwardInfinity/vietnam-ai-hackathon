@@ -72,6 +72,12 @@ services:
 
   caddy:
     image: caddy:2
+    # BẮT BUỘC bơm label này mỗi lần sửa deploy/Caddyfile: single-file bind mount giữ
+    # inode CŨ sau `git reset --hard` trên VPS, và compose không recreate caddy nếu
+    # config hash không đổi (depends_on không tính vào hash) — label đổi ⇒ recreate
+    # ⇒ mount lại file mới + nạp config mới. (F6 ghi chú — bài học deploy /admin)
+    labels:
+      lawstate.caddyfile-rev: "f6-admin-basicauth-v1"
     ports:
       - "80:80"
       - "443:443"
