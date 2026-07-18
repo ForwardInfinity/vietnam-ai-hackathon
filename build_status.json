@@ -4,7 +4,7 @@
     {"name": "F1 — Nền tảng: skeleton, DDL + trigger, API stub, UI shell, CI/CD lên VPS", "status": "done", "note": "URL sống: https://152-42-242-127.sslip.io — mọi commit master tự deploy"},
     {"name": "F1 — Contracts: schemas 1:1 DDL, LLM gateway, CONTRACTS.md", "status": "done", "note": "Xem CONTRACTS.md trước khi code; make smoke là gate merge"},
     {"name": "F2 — Corpus: văn bản gốc + manifest đếm tay + fixtures", "status": "pending", "note": ""},
-    {"name": "F3 — Ingest: parser cây, citation→edge, op extraction", "status": "pending", "note": ""},
+    {"name": "F3 — Ingest: parser cây, citation→edge, op extraction", "status": "done", "note": "R-4 24/24 · expected_ops 89/89 · edges 113/119+6 ADJ · LLM live 3/3 — xem BAOCAO-F3.md; demo: python -m ingest.demo <doc_key>"},
     {"name": "F4 — Engine: fold, windows, scope, snapshot, conflict", "status": "done", "note": "fold pure + snapshot/sweep/oracle/blast/invariants; substrate QA 04 §5 xanh; QA script: python -m engine.story (4/4)"},
     {"name": "F5 — Retrieval + Answering: hybrid, closure, compiler, verifier 2 tầng", "status": "done", "note": "answer_question() nối sẵn /v1/ask qua answer/pipeline; demo: python -m answer.demo; judge chưa hiệu chuẩn κ → cap Tier B"},
     {"name": "F6 — Bề mặt: API /v1 đủ bảng S6 + admin console + chat SSE + timeline/graph", "status": "done", "note": "/admin sống (basic-auth curator/shb-curator-2026); ratify per-op+batch+spot-check chạy thật; replay+blast-radius NỐI ENGINE F4 thật; eval 501 chờ F7; /ask chạy pipeline F5 thật"},
