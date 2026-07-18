@@ -1,0 +1,232 @@
+NGÂN HÀNG NHÀ NƯỚC
+VIỆT NAM
+Số: 41/2016/TT-NHNN
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+Hà Nội, ngày 30 tháng 12 năm 2016
+THÔNG TƯ
+Quy định tỷ lệ an toàn vốn đối với
+ngân hàng, chi nhánh ngân hàng nước ngoài
+Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12 ngày 16 tháng 6 năm 2010;
+Căn cứ Luật các tổ chức tín dụng số 47/2010/QH12 ngày 16 tháng 6 năm 2010;
+Căn cứ Nghị định số 156/2013/NĐ-CP ngày 11 tháng 11 năm 2013 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Ngân hàng Nhà nước Việt Nam;
+Theo đề nghị của Chánh Thanh tra, giám sát ngân hàng;
+Thống đốc Ngân hàng Nhà nước Việt Nam (sau đây gọi là Ngân hàng Nhà nước) ban hành Thông tư quy định tỷ lệ an toàn vốn đối với ngân hàng, chi nhánh ngân hàng nước ngoài.
+Chương I
+QUY ĐỊNH CHUNG
+Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng
+1. Thông tư này quy định tỷ lệ an toàn vốn đối với ngân hàng, chi nhánh ngân hàng nước ngoài tại Việt Nam.
+2. Đối tượng áp dụng gồm:
+a) Ngân hàng: Ngân hàng thương mại nhà nước, ngân hàng thương mại cổ phần, ngân hàng liên doanh, ngân hàng 100% vốn nước ngoài;
+b) Chi nhánh ngân hàng nước ngoài.
+3. Thông tư này không áp dụng đối với các ngân hàng được đặt vào kiểm soát đặc biệt.
+Điều 2. Giải thích từ ngữ
+Trong Thông tư này, các từ ngữ dưới đây được hiểu như sau:
+1. Tài sản tài chính là các loại tài sản sau:
+a) Tiền mặt;
+b) Công cụ vốn chủ sở hữu của đơn vị khác;
+c) Quyền theo hợp đồng để:
+(i) Nhận tiền mặt hoặc tài sản tài chính khác từ đơn vị khác; hoặc
+(ii) Trao đổi các tài sản tài chính hoặc nợ phải trả tài chính với đơn vị khác theo các điều kiện có thể có lợi cho ngân hàng, chi nhánh ngân hàng nước ngoài;
+d) Hợp đồng sẽ hoặc có thể được thanh toán bằng các công cụ vốn chủ sở hữu của ngân hàng.
+2. Nợ phải trả tài chính là các nghĩa vụ sau:
+a) Mang tính bắt buộc để:
+(i) Thanh toán tiền mặt hoặc tài sản tài chính cho đơn vị khác;
+(ii) Trao đổi các tài sản tài chính hoặc nợ phải trả tài chính với đơn vị khác theo các điều kiện không có lợi cho ngân hàng, chi nhánh ngân hàng nước ngoài; hoặc
+b) Hợp đồng sẽ hoặc có thể được thanh toán bằng các công cụ vốn chủ sở hữu của ngân hàng.
+3. Công cụ tài chính là hợp đồng làm tăng tài sản tài chính của một bên và nợ phải trả tài chính hoặc công cụ vốn chủ sở hữu của bên khác.
+4. Công cụ vốn chủ sở hữu là hợp đồng chứng tỏ được những lợi ích còn lại về tài sản của đơn vị sau khi trừ đi toàn bộ nghĩa vụ của đơn vị đó. Công cụ vốn chủ sở hữu có tính chất nợ do ngân hàng phát hành gồm cổ phiếu ưu đãi cổ tức và các công cụ vốn chủ sở hữu khác đáp ứng các điều kiện sau:
+a) Được mua lại theo quy định của pháp luật và đảm bảo sau khi thực hiện vẫn tuân thủ các giới hạn, tỷ lệ an toàn theo quy định;
+b) Có thể dùng để bù đắp khoản lỗ mà ngân hàng không phải ngừng các giao dịch tự doanh;
+c) Không phải trả cổ tức ưu đãi và chuyển cổ tức ưu đãi sang năm tiếp theo trong trường hợp việc trả cổ tức ưu đãi dẫn đến kết quả kinh doanh của ngân hàng bị lỗ.
+5. Nợ thứ cấp (subordinated debt) là khoản nợ mà chủ nợ đồng ý thỏa thuận thanh toán sau các nghĩa vụ, chủ nợ có bảo đảm và không bảo đảm khác khi đơn vị vay nợ bị phá sản, giải thể.
+6. Khách hàng là cá nhân, pháp nhân (bao gồm cả tổ chức tín dụng, chi nhánh ngân hàng nước ngoài) có quan hệ tín dụng, gửi tiền với ngân hàng, chi nhánh ngân hàng nước ngoài, trừ các đối tác quy định tại khoản 7 Điều này.
+7. Đối tác là cá nhân, pháp nhân (bao gồm cả tổ chức tín dụng, chi nhánh ngân hàng nước ngoài) có giao dịch quy định tại khoản 4 Điều 8 Thông tư này với ngân hàng, chi nhánh ngân hàng nước ngoài.
+8. Khoản phải đòi của ngân hàng, chi nhánh ngân hàng nước ngoài bao gồm:
+a) Các khoản cấp tín dụng, bao gồm cả khoản ủy thác cấp tín dụng và khoản mua có bảo lưu quyền truy đòi công cụ chuyển nhượng, giấy tờ có giá khác, trừ các khoản mua có kỳ hạn công cụ chuyển nhượng, giấy tờ có giá khác;
+b) Giấy tờ có giá do đơn vị khác phát hành;
+c) Quyền theo hợp đồng để nhận tiền mặt hoặc tài sản tài chính khác từ đơn vị khác theo quy định của pháp luật, trừ các khoản quy định tại điểm a và b khoản này;
+9. Danh mục cấp tín dụng bán lẻ là danh mục các khoản cấp tín dụng cho khách hàng là cá nhân (không bao gồm các khoản cho vay bảo đảm bằng bất động sản quy định tại khoản 10 Điều này, khoản cho vay thế chấp nhà quy định tại khoản 11 Điều này, các khoản cho vay để kinh doanh chứng khoán) mà số dư cấp tín dụng (đã giải ngân và chưa giải ngân) của một khách hàng đảm bảo đồng thời:
+a) Không vượt quá 8 tỷ đồng Việt Nam;
+b) Không vượt quá 0,2% tổng số dư của toàn bộ danh mục cấp tín dụng bán lẻ (đã giải ngân và chưa giải ngân) của ngân hàng, chi nhánh ngân hàng nước ngoài.
+10. Khoản cho vay bảo đảm bằng bất động sản là khoản cho vay đối với cá nhân, pháp nhân để mua bất động sản, thực hiện dự án bất động sản và được bảo đảm bằng chính bất động sản, dự án bất động sản hình thành từ khoản cho vay theo các quy định của pháp luật về giao dịch đảm bảo.
+11. Khoản cho vay thế chấp nhà là khoản cho vay bảo đảm bằng bất động sản đối với cá nhân để mua nhà đáp ứng đầy đủ các điều kiện sau:
+a) Nguồn tiền trả nợ không phải là nguồn tiền cho thuê nhà hình thành từ khoản cho vay;
+b) Nhà đã hoàn thành theo hợp đồng mua bán nhà;
+c) Ngân hàng, chi nhánh ngân hàng nước ngoài có đầy đủ quyền hợp pháp để xử lý nhà thế chấp khi khách hàng không trả được nợ theo quy định của pháp luật về giao dịch đảm bảo;
+d) Nhà hình thành từ khoản cho vay thế chấp này phải được định giá độc lập (được bên thứ ba định giá hoặc được bộ phận độc lập với bộ phận phê duyệt tín dụng của ngân hàng, chi nhánh ngân hàng nước ngoài định giá) với nguyên tắc thận trọng (giá trị không cao hơn giá thị trường tại thời điểm xét duyệt cho vay) theo quy định của ngân hàng, chi nhánh ngân hàng nước ngoài.
+12. Khoản cấp tín dụng chuyên biệt (Specialised lending) là các khoản cấp tín dụng để thực hiện dự án, đầu tư máy móc thiết bị hoặc mua hàng hóa, đáp ứng các tiêu chí sau:
+a) Khách hàng vay vốn là pháp nhân được thành lập chỉ để thực hiện dự án, khai thác máy móc thiết bị, kinh doanh hàng hóa được hình thành từ nguồn vốn cấp tín dụng, không có hoạt động kinh doanh khác;
+b) Được bảo đảm bằng dự án, máy móc thiết bị, hàng hóa được hình thành từ nguồn vốn cấp tín dụng và toàn bộ nguồn tiền trả nợ là nguồn tiền hình thành từ việc kinh doanh, khai thác dự án, máy móc, thiết bị và hàng hóa đó;
+c) Ngân hàng, chi nhánh ngân hàng nước ngoài có quyền theo hợp đồng cấp tín dụng để kiểm soát toàn bộ việc giải ngân theo tiến độ của dự án, đầu tư máy móc, thiết bị, mua hàng hóa và quản lý thu nhập, dòng tiền của việc kinh doanh, khai thác dự án, máy móc, thiết bị và hàng hóa đó để thu hồi nợ theo hợp đồng cấp tín dụng;
+d) Được thực hiện dưới các hình thức:
+(i) Cấp tín dụng tài trợ dự án (Project Finance) là khoản cấp tín dụng chuyên biệt để thực hiện dự án;
+(ii) Cấp tín dụng tài trợ dự án kinh doanh bất động sản (Income producing real estate) là các khoản cấp tín dụng chuyên biệt để thực hiện dự án kinh doanh bất động sản (văn phòng, trung tâm thương mại, khu đô thị, tòa nhà phức hợp, kho bãi, khách sạn, khu công nghiệp...);
+(iii) Cấp tín dụng tài trợ máy móc thiết bị (Object Finance) là các khoản cấp tín dụng chuyên biệt để đầu tư máy móc, thiết bị (tàu thủy, máy bay, vệ tinh, tàu hỏa...);
+(iv) Cấp tín dụng tài trợ hàng hóa (Commodities Finance) là các khoản cấp tín dụng chuyên biệt để mua hàng hóa (dầu thô, kim loại, ngũ cốc,...).
+13. Bất động sản kinh doanh là bất động sản được đầu tư, mua, nhận chuyển nhượng, thuê, thuê mua để bán, chuyển nhượng, cho thuê, cho thuê lại, cho thuê mua nhằm mục đích sinh lợi.
+14. Giao dịch Repo là giao dịch trong đó một bên bán và chuyển giao quyền sở hữu tài sản tài chính cho một bên khác, đồng thời cam kết sẽ mua lại và nhận lại quyền sở hữu tài sản tài chính đó sau một thời gian xác định với một mức giá xác định.
+15. Giao dịch Reverse Repo là giao dịch trong đó một bên mua và nhận chuyển giao quyền sở hữu tài sản tài chính từ một bên khác, đồng thời cam kết sẽ bán lại và chuyển giao quyền sở hữu tài sản tài chính đó sau một thời gian xác định với một mức giá xác định, bao gồm cả giao dịch mua có kỳ hạn tài sản tài chính theo quy định của Ngân hàng Nhà nước về hoạt động chiết khấu công cụ chuyển nhượng, giấy tờ có giá khác.
+16. Doanh nghiệp xếp hạng tín nhiệm độc lập bao gồm:
+a) Tổ chức xếp hạng tín nhiệm Moody’s, Standard & Poor, Fitch Rating;
+b) Các doanh nghiệp xếp hạng tín nhiệm được thành lập theo quy định của pháp luật Việt Nam về dịch vụ xếp hạng tín nhiệm.
+17. Xếp hạng tín nhiệm tự nguyện là việc doanh nghiệp xếp hạng tín nhiệm độc lập tự nguyện thực hiện xếp hạng tín nhiệm, không có thỏa thuận với đối tượng được xếp hạng tín nhiệm.
+18. Xếp hạng tín nhiệm thỏa thuận là việc doanh nghiệp xếp hạng tín nhiệm độc lập thực hiện xếp hạng tín nhiệm theo thỏa thuận giữa doanh nghiệp xếp hạng tín nhiệm độc lập và đối tượng được xếp hạng tín nhiệm.
+19. OECD là tổ chức Hợp tác Kinh tế và Phát triển (Organization for Economic Cooperation and Development).
+20. Tổ chức tài chính quốc tế gồm:
+a) Nhóm ngân hàng thế giới gồm: Ngân hàng Tái thiết và Phát triển quốc tế (The International Bank for Reconstruction and Development - IBRD), Công ty tài chính quốc tế (The International Financial Company - IFC), Hiệp hội Phát triển quốc tế (The International Development Association-IDA), Cơ quan Bảo lãnh Đầu tư Đa phương (The Multilateral Investment Guarantee Agency- MIGA);
+b) Ngân hàng Phát triển Châu Á (The Asian Development Bank - ADB);
+c) Ngân hàng Phát triển Châu Phi (The Africa Development Bank - AfDB);
+d) Ngân hàng tái thiết và Phát triển Châu Âu (The European Bank for Reconstruction and Development - EBRD);
+đ) Ngân hàng Phát triển Liên Mỹ (The Inter-American Development Bank - IADB);
+e) Ngân hàng Đầu tư Châu Âu (The European Investment Bank - EIB);
+g) Quỹ Đầu tư Châu Âu (The European Investment Fund - EIF);
+h) Ngân hàng Đầu tư Bắc Âu (The Nordic Investment Bank - NIB);
+i) Ngân hàng Phát triển Caribbean (The Caribbean Development Bank - CDB);
+k) Ngân hàng Phát triển Hồi giáo (The Islamic Development Bank - IDB);
+l) Ngân hàng Phát triển cộng đồng Châu Âu (The Council of Europe Development Bank - CEDB);
+m) Tổ chức tài chính quốc tế khác có vốn điều lệ do chính phủ các nước đóng góp.
+21. Giảm thiểu rủi ro là việc ngân hàng, chi nhánh ngân hàng nước ngoài sử dụng các biện pháp làm giảm một phần hoặc toàn bộ tổn thất có thể xảy ra do các rủi ro trong hoạt động của ngân hàng, chi nhánh ngân hàng nước ngoài.
+22. Sản phẩm phái sinh bao gồm:
+a) Sản phẩm phái sinh theo quy định tại khoản 23 Điều 4 Luật các tổ chức tín dụng, gồm:
+(i) Sản phẩm phái sinh tín dụng gồm các hợp đồng bảo hiểm tín dụng, hợp đồng hoán đổi rủi ro tín dụng, hợp đồng đầu tư gắn với rủi ro tín dụng, hợp đồng phái sinh tín dụng khác theo quy định của pháp luật;
+(ii) Sản phẩm phái sinh lãi suất gồm hợp đồng lãi suất kỳ hạn, hợp đồng hoán đổi lãi suất một đồng tiền, hợp đồng hoán đổi lãi suất hai đồng tiền hoặc hợp đồng hoán đổi tiền tệ chéo, hợp đồng quyền chọn lãi suất, các hợp đồng phái sinh lãi suất khác theo quy định của pháp luật;
+(iii) Sản phẩm phái sinh ngoại tệ gồm các giao dịch mua, bán ngoại tệ kỳ hạn, giao dịch hoán đổi ngoại tệ, giao dịch quyền chọn mua, bán ngoại tệ, các giao dịch phái sinh ngoại tệ khác theo quy định của pháp luật;
+(iv) Sản phẩm phái sinh giá cả hàng hóa gồm các hợp đồng hoán đổi giá cả hàng hóa, hợp đồng tương lai giá cả hàng hóa, hợp đồng quyền chọn giá cả hàng hóa và các hợp đồng phái sinh giá cả hàng hóa khác theo quy định của pháp luật.
+b) Chứng khoán phái sinh gồm hợp đồng tương lai, hợp đồng quyền chọn, hợp đồng kỳ hạn và chứng khoán phái sinh khác theo quy định của pháp luật về chứng khoán phái sinh và thị trường chứng khoán phái sinh;
+c) Sản phẩm phái sinh khác theo quy định của pháp luật.
+23. Tài sản cơ sở là tài sản tài chính gốc được sử dụng làm cơ sở để xác định giá trị sản phẩm phái sinh.
+24. Rủi ro tín dụng bao gồm:
+a) Rủi ro tín dụng là rủi ro do khách hàng không thực hiện hoặc không có khả năng thực hiện một phần hoặc toàn bộ nghĩa vụ trả nợ theo hợp đồng hoặc thỏa thuận với ngân hàng, chi nhánh ngân hàng nước ngoài, trừ các trường hợp quy định tại điểm b khoản này;
+b) Rủi ro tín dụng đối tác là rủi ro do đối tác không thực hiện hoặc không có khả năng thực hiện một phần hoặc toàn bộ nghĩa vụ thanh toán trước hoặc khi đến hạn của các giao dịch quy định tại khoản 4 Điều 8 Thông tư này.
+25. Rủi ro thị trường là rủi ro do biến động bất lợi của lãi suất, tỷ giá, giá chứng khoán và giá hàng hóa trên thị trường. Rủi ro thị trường bao gồm:
+a) Rủi ro lãi suất là rủi ro do biến động bất lợi của lãi suất trên thị trường đối với giá trị của giấy tờ có giá, công cụ tài chính có lãi suất, sản phẩm phái sinh lãi suất trên số kinh doanh của ngân hàng, chi nhánh ngân hàng nước ngoài;
+b) Rủi ro ngoại hối là rủi ro do biến động bất lợi của tỷ giá trên thị trường khi ngân hàng, chi nhánh ngân hàng nước ngoài có trạng thái ngoại tệ;
+c) Rủi ro giá cổ phiếu là rủi ro do biến động bất lợi của giá cổ phiếu trên thị trường đối với giá trị của cổ phiếu, giá trị chứng khoán phái sinh trên sổ kinh doanh của ngân hàng, chi nhánh ngân hàng nước ngoài;
+d) Rủi ro giá hàng hóa là rủi ro do biến động bất lợi của giá hàng hóa trên thị trường đối với giá trị của sản phẩm phái sinh hàng hóa, giá trị của sản phẩm trong giao dịch giao ngay chịu rủi ro giá hàng hóa của ngân hàng, chi nhánh ngân hàng nước ngoài.
+26. Rủi ro lãi suất trên sổ ngân hàng là rủi ro do biến động bất lợi của lãi suất đối với thu nhập, giá trị tài sản, giá trị nợ phải trả và giá trị cam kết ngoại bảng của ngân hàng, chi nhánh ngân hàng nước ngoài phát sinh do:
+a) Chênh lệch thời điểm ấn định mức lãi suất mới hoặc kỳ xác định lại lãi suất;
+b) Thay đổi mối quan hệ giữa các mức lãi suất của các công cụ tài chính khác nhau nhưng có cùng thời điểm đáo hạn;
+c) Thay đổi mối quan hệ giữa các mức lãi suất ở các kỳ hạn khác nhau;
+d) Tác động từ các sản phẩm quyền chọn lãi suất, các sản phẩm có yếu tố quyền chọn lãi suất.
+27. Rủi ro hoạt động là rủi ro do các quy trình nội bộ quy định không đầy đủ hoặc có sai sót, do yếu tố con người, do các lỗi, sự cố của hệ thống hoặc do các yếu tố bên ngoài làm tổn thất về tài chính, tác động tiêu cực phi tài chính đối với ngân hàng, chi nhánh ngân hàng nước ngoài (bao gồm cả rủi ro pháp lý). Rủi ro hoạt động không bao gồm:
+a) Rủi ro danh tiếng;
+b) Rủi ro chiến lược.
+28. Rủi ro danh tiếng là rủi ro do khách hàng, đối tác, cổ đông, nhà đầu tư hoặc công chúng có phản ứng tiêu cực về uy tín của ngân hàng, chi nhánh ngân hàng nước ngoài.
+29. Rủi ro chiến lược là rủi ro do ngân hàng, chi nhánh ngân hàng nước ngoài có hoặc không có chiến lược, chính sách ứng phó kịp thời trước các thay đổi môi trường kinh doanh làm giảm khả năng đạt được chiến lược kinh doanh, mục tiêu lợi nhuận của ngân hàng, chi nhánh ngân hàng nước ngoài.
+30. Giá trị chịu rủi ro (Exposures) là phần giá trị của tài sản, nợ phải trả, các cam kết ngoại bảng của ngân hàng, chi nhánh ngân hàng nước ngoài chịu tổn thất tài chính, tác động tiêu cực phi tài chính của rủi ro tín dụng, rủi ro thị trường, rủi ro thanh khoản, rủi ro hoạt động và các rủi ro khác.
+31. Giao dịch tự doanh là giao dịch mua, bán, trao đổi do ngân hàng, chi nhánh ngân hàng nước ngoài, công ty con của ngân hàng thực hiện theo quy định của pháp luật với mục đích mua, bán, trao đổi trong thời hạn dưới một năm để thu lợi từ chênh lệch giá thị trường cho ngân hàng, chi nhánh ngân hàng nước ngoài đối với các công cụ tài chính, gồm:
+a) Các công cụ tài chính trên thị trường tiền tệ;
+b) Các loại tiền tệ (bao gồm cả vàng);
+c) Chứng khoán trên thị trường vốn;
+d) Các sản phẩm phái sinh;
+đ) Các công cụ tài chính khác được giao dịch trên thị trường chính thức.
+32. Sổ kinh doanh là danh mục ghi nhận các trạng thái của:
+a) Giao dịch tự doanh (trừ các giao dịch quy định tại điểm b khoản 33 Điều này);
+b) Giao dịch để thực hiện nghiệp vụ bảo lãnh phát hành công cụ tài chính;
+c) Giao dịch sản phẩm phái sinh để phòng ngừa rủi ro của các giao dịch tự doanh của ngân hàng, chi nhánh ngân hàng nước ngoài;
+d) Giao dịch mua bán ngoại tệ, tài sản tài chính để phục vụ nhu cầu của khách hàng, đối tác và các giao dịch để đối ứng với các giao dịch này.
+33. Sổ ngân hàng là danh mục ghi nhận trạng thái của:
+a) Giao dịch repo, reverse repo;
+b) Giao dịch sản phẩm phái sinh để phòng ngừa rủi ro cho các khoản mục của Bảng cân đối tài sản (bao gồm cả các khoản mục ngoại bảng) của ngân hàng, chi nhánh ngân hàng nước ngoài, trừ các giao dịch đã phân loại vào Sổ kinh doanh của ngân hàng, chi nhánh ngân hàng nước ngoài quy định tại điểm c, khoản 32 Điều này;
+c) Giao dịch mua bán tài sản tài chính với mục đích dự trữ khả năng thanh khoản;
+d) Các giao dịch còn lại không thuộc sổ kinh doanh của ngân hàng, chi nhánh ngân hàng nước ngoài.
+(...)
+Chương II
+QUY ĐỊNH CỤ THỂ
+Mục 1. TỶ LỆ AN TOÀN VỐN VÀ VỐN TỰ CÓ
+Điều 6. Tỷ lệ an toàn vốn
+1. Tỷ lệ an toàn vốn (CAR) tính theo đơn vị phần trăm (%) được xác định bằng công thức:
+Trong đó:
+- C: Vốn tự có;
+- RWA: Tổng tài sản tính theo rủi ro tín dụng;
+- KOR: Vốn yêu cầu cho rủi ro hoạt động;
+- KMR: Vốn yêu cầu cho rủi ro thị trường.
+2. Ngân hàng không có công ty con, chi nhánh ngân hàng nước ngoài phải thường xuyên duy trì tỷ lệ an toàn vốn xác định trên cơ sở báo cáo tài chính của ngân hàng, chi nhánh ngân hàng nước ngoài tối thiểu 8%.
+3. Ngân hàng có công ty con phải duy trì:
+a) Tỷ lệ an toàn vốn xác định trên cơ sở báo cáo tài chính của ngân hàng tối thiểu 8%;
+b) Tỷ lệ an toàn vốn hợp nhất xác định trên cơ sở báo cáo tài chính hợp nhất của ngân hàng tối thiểu 8%. Trường hợp ngân hàng có công ty con là công ty kinh doanh bảo hiểm thì tỷ lệ an toàn vốn hợp nhất được xác định trên cơ sở báo cáo tài chính hợp nhất của ngân hàng nhưng không hợp nhất công ty con là công ty kinh doanh bảo hiểm theo nguyên tắc hợp nhất của pháp luật về kế toán và báo cáo tài chính đối với tổ chức tín dụng.
+4. Đối với các khoản mục bằng ngoại tệ, ngân hàng, chi nhánh ngân hàng nước ngoài quy ra đồng Việt Nam khi tính tỷ lệ an toàn vốn như sau:
+a) Thực hiện theo quy định về hạch toán trên các tài khoản ngoại tệ của pháp luật về hệ thống tài khoản kế toán;
+b) Đối với rủi ro ngoại hối thì thực hiện như sau:
+(i) Tỷ giá giữa đồng Việt Nam và đô la Mỹ: là tỷ giá trung tâm do Ngân hàng Nhà nước công bố vào ngày báo cáo;
+(ii) Tỷ giá giữa đồng Việt Nam và các ngoại tệ khác: là tỷ giá bán giao ngay chuyển khoản của ngân hàng, chi nhánh ngân hàng nước ngoài vào cuối ngày báo cáo.
+5. Căn cứ kết quả giám sát, kiểm tra, thanh tra của Ngân hàng Nhà nước đối với ngân hàng, chi nhánh ngân hàng nước ngoài, trong trường hợp cần thiết để bảo đảm an toàn trong hoạt động của ngân hàng, chi nhánh ngân hàng nước ngoài, tùy theo tính chất, mức độ rủi ro, Ngân hàng Nhà nước yêu cầu ngân hàng, chi nhánh ngân hàng nước ngoài duy trì tỷ lệ an toàn vốn cao hơn so với mức quy định tại Thông tư này.
+Điều 7. Vốn tự có
+1. Vốn tự có của ngân hàng, chi nhánh ngân hàng nước ngoài là cơ sở để tính toán tỷ lệ an toàn vốn theo quy định tại Thông tư này.
+2. Vốn tự có bao gồm tổng Vốn cấp 1 và Vốn cấp 2 trừ đi các khoản giảm trừ quy định tại Phụ lục 1 ban hành kèm theo Thông tư này.
+(...)
+Điều 16. Vốn yêu cầu cho rủi ro hoạt động
+KOR =
+(BInăm thứ n + BInăm thứ n-1 + BInăm thứ n-2
+x 15%
+3
+2. Chỉ số kinh doanh được xác định theo công thức sau:
+BI = IC + SC + FC
+Trong đó:
+- IC: Giá trị tuyệt đối của Thu nhập lãi và các khoản thu nhập tương tự trừ Chi phí lãi và các khoản chi phí tương tự;
+- SC: Tổng giá trị của Thu nhập từ hoạt động dịch vụ, Chi phí từ hoạt động dịch vụ, Thu nhập hoạt động khác, Chi phí hoạt động khác;
+- FC: Tổng của giá trị tuyệt đối Lãi/lỗ thuần từ hoạt động kinh doanh ngoại hối, mua bán chứng khoán kinh doanh và mua bán chứng khoán đầu tư.
+Chỉ số kinh doanh được xác định theo hướng dẫn tại Phụ lục 3 ban hành kèm theo Thông tư này.
+(...)
+Điều 23. Hiệu lực thi hành
+1. Thông tư này có hiệu lực thi hành kể từ ngày 01 tháng 01 năm 2020, trừ trường hợp quy định tại khoản 2 Điều này.
+2. Các quy định tại Thông tư này được áp dụng sớm hơn thời điểm quy định tại khoản 1 Điều này đối với các ngân hàng, chi nhánh ngân hàng nước ngoài quy định tại khoản 3 Điều này.
+3. Ngân hàng, chi nhánh ngân hàng nước ngoài có khả năng thực hiện tỷ lệ an toàn vốn theo quy định tại Thông tư này trước thời điểm quy định tại khoản 1 Điều này, gửi văn bản đăng ký áp dụng Thông tư này cho Ngân hàng Nhà nước (Cơ quan Thanh tra, giám sát ngân hàng) trong đó nêu rõ khả năng thực hiện, dự kiến thời điểm áp dụng. Thời điểm áp dụng Thông tư này đối với ngân hàng, chi nhánh ngân hàng nước ngoài có văn bản đăng ký theo thông báo bằng văn bản của Ngân hàng Nhà nước.
+Điều 24. Tổ chức thực hiện
+Chánh Văn phòng, Chánh Thanh tra, giám sát ngân hàng, Thủ trưởng các đơn vị thuộc Ngân hàng Nhà nước, Giám đốc Ngân hàng Nhà nước chi nhánh tỉnh, thành phố trực thuộc Trung ương, Chủ tịch Hội đồng quản trị, Chủ tịch Hội đồng thành viên và Tổng Giám đốc (Giám đốc) ngân hàng, chi nhánh ngân hàng nước ngoài chịu trách nhiệm tổ chức thực hiện Thông tư này.
+Nơi nhận:
+- Như Điều 24;
+- Ban Lãnh đạo NHNN;
+- Văn phòng Chính phủ;
+- Bộ Tư pháp (để kiểm tra);
+- Công báo;
+- Lưu: VP, Vụ PC, TTGSNH5.
+KT. THỐNG ĐỐC
+PHÓ THỐNG ĐỐC
+Nguyễn Đồng Tiến
+(...)
+PHỤ LỤC 3
+XÁC ĐỊNH GIÁ TRỊ CỦA CHỈ SỐ KINH DOANH
+(Ban hành kèm theo Thông tư số 41/2016/TT-NHNN ngày 30 tháng 12 năm 2016
+của Thống đốc Ngân hàng Nhà nước quy định tỷ lệ an toàn vốn đối với
+ngân hàng, chi nhánh ngân hàng nước ngoài)
+1. Ngân hàng, chi nhánh ngân hàng xác định giá trị của Chỉ số kinh doanh như sau:
+Cấu phần
+Công thức tính
+Khoản mục trên Báo cáo kết quả hoạt động kinh doanh
+IC
+|Thu nhập lãi và các khoản thu nhập tương tự - Chi phí lãi và các chi phí tương tự|
+Thu nhập lãi và các khoản thu nhập tương tự
+Chi phí lãi và các chi phí tương tự
+SC
+Thu nhập từ hoạt động dịch vụ + Chi phí hoạt động dịch vụ + Thu nhập từ hoạt động khác + Chi phí từ hoạt động khác
+Thu nhập từ hoạt động dịch vụ
+Chi phí hoạt động dịch vụ
+Thu nhập từ hoạt động khác
+Chi phí hoạt động khác
+FC
+|Lãi/lỗ thuần từ hoạt động kinh doanh ngoại hối (bao gồm cả vàng tiêu chuẩn)| + |Lãi/lỗ thuần từ mua bán chứng khoán kinh doanh| + |Lãi/lỗ thuần từ mua bán, chứng khoán đầu tư|
+|Lãi/lỗ thuần từ hoạt động kinh doanh ngoại hối (bao gồm cả vàng tiêu chuẩn)|
+|Lãi/lỗ thuần từ mua bán chứng khoán kinh doanh|
+|Lãi/lỗ thuần từ mua bán, chứng khoán đầu tư|
+2. Các khoản mục sau đây không được tính vào bất cứ cấu phần nào của Chỉ số kinh doanh:
+a) Chi bảo hiểm và tái bảo hiểm tài sản của ngân hàng, chi nhánh ngân hàng nước ngoài (một phần của Tài khoản 79 và 875);
+b) Lãi/lỗ thuần do ngừng ghi nhận tài sản tài chính không được đánh giá theo giá trị hợp lý thông qua Báo cáo kết quả hoạt động kinh doanh (Tài khoản 742, Tài khoản 843);
+c) Lãi/lỗ thuần do ngừng ghi nhận tài sản phi tài chính, nợ phải trả không được đánh giá theo giá trị hợp lý thông qua Báo cáo kết quả hoạt động kinh doanh (một phần của Tài khoản 79, Tài khoản 899);
+d) Giá trị âm của lợi thế thương mại đã được ghi nhận vào Báo cáo kết quả hoạt động kinh doanh (một phần Tài khoản 79 đối với lợi thế thương mại được chuyển nhượng khi thực hiện mua tài sản mà chỉ tính một phần hoặc không tính đến lợi thế thương mại đi kèm).
+Ví dụ minh họa:
+Cấu phần
+Khoản mục trên Báo cáo KQHĐKD
+IC=|8.000 tỷ đồng - 3.500 tỷ đồng| = 4.500 tỷ đồng
+Thu nhập lãi và các khoản: 8.000 tỷ đồng
+Chi phí lãi và các chi phí tương tự: 3.500 tỷ đồng
+SC = 700 tỷ đồng + 400 tỷ đồng + 200 tỷ đồng + 110 tỷ đồng = 1.410 tỷ đồng
+Thu nhập từ hoạt động dịch vụ: 700 tỷ đồng
+Chi phí hoạt động dịch vụ: 400 tỷ đồng
+Thu nhập từ hoạt động khác: 200 tỷ đồng
+Chi phí hoạt động khác: 110 tỷ đồng
+FC = 450 tỷ đồng + |(100) tỷ đồng| + 50 tỷ = 600 tỷ đồng
+Lãi/lỗ thuần từ hoạt động kinh doanh ngoại hối: 450 tỷ đồng
+Lãi/lỗ thuần từ mua bán chứng khoán kinh doanh: (100) tỷ đồng
+Lãi/lỗ thuần từ mua bán, chứng khoán đầu tư: 50 tỷ đồng

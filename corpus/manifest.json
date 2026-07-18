@@ -1,0 +1,2800 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "generated_by": "corpus/tools/build_manifest.py",
+    "conventions": {
+      "path": "dieu:<n>[/khoan:<n>][/diem:<chữ>][/tiet:<roman>] | phuluc:<n>; đường dẫn trong văn bản NGUỒN của op trừ khi ghi target_doc",
+      "counts": "đếm theo grammar 02 §1 trên FILE text (line-anchored, quote-depth 0, khoản/điểm/tiết chỉ trong ngữ cảnh Điều; nội dung Phụ lục là blob D-49, không đếm khoản bên trong). Hai phương pháp độc lập: tools/count_grammar.py (pattern) và tools/verify_counts_sequential.py (sequence-validated) phải khớp.",
+      "op_kinds": "amend|insert|repeal|suspend|close_window|dinh_chinh|norm_decl|blanket_derogation (02 §3); suspend ≠ repeal; repeal có thể target op (target_is_op)",
+      "expected_transitions": "điều khoản chuyển tiếp trích thành DSL D-25 — tách khỏi expected_ops vì transition không mutate node, nó sinh scope-split",
+      "valid_from": "ngày op có hiệu lực, đọc từ chính văn bản; dinh_chinh hồi tố về ĐẦU cửa sổ của version bị đính chính (D-12)",
+      "amending_nodes": "node chứa động-từ-hiệu-lực + TEXT QUOTE (role amending, D-05, loại khỏi retrieval); điều repeal thuần không quote không nằm ở đây",
+      "edges": "kiểu theo 02 §5.2: tham_quyen|dinh_nghia|ngoai_le|chuyen_tiep|chu_de|frontier|pinpoint (pinpoint = trích dẫn đích danh không thuộc 5 loại mandatory)"
+    }
+  },
+  "documents": [
+    {
+      "doc_key": "39/2016/TT-NHNN",
+      "slug": "tt-39-2016-tt-nhnn",
+      "title": "Thông tư quy định về hoạt động cho vay của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài đối với khách hàng",
+      "doc_type": "thong_tu",
+      "sha256": "ae220b624ba51219d5707bfbfd36ce5bcb50289ef81b9e9439b6d2df53e9630d",
+      "issued_date": "2016-12-30",
+      "issued_date_quote": "Hà Nội, ngày 30 tháng 12 năm 2016",
+      "effective_date": "2017-03-15",
+      "effective_date_quote": "Thông tư này có hiệu lực thi hành kể từ ngày 15 tháng 3 năm 2017.",
+      "synthetic": false,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/thong-tu-39-2016-tt-nhnn-ve-hoat-dong-cho-vay-cua-to-chuc-tin-dung-112177-d1.html",
+      "transcription_notes": [
+        "bản luatvietnam là bản gốc 2016 (đối chiếu Đ8 6-khoản, ngôn ngữ tiền-TT06)",
+        "đã bỏ 1 dòng chú thích biên tập chèn inline (điểm c(iv) k2 Đ22 — nội dung TT12/2024) và các marker 'Bổ sung' của trang web",
+        "1 dòng khoản bị tách số ('1.' đứng riêng tại k1 Đ27) đã ghép lại"
+      ],
+      "counts": {
+        "dieu": 35,
+        "khoan": 106,
+        "diem": 86,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "repeal",
+          "source_path": "dieu:33/khoan:2/diem:a",
+          "target_doc": "1627/2001/QĐ-NHNN",
+          "target_surface": "Quyết định số 1627/2001/QĐ-NHNN",
+          "valid_from": "2017-03-15",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 2,
+          "kind": "repeal",
+          "source_path": "dieu:33/khoan:2/diem:b",
+          "target_doc": "28/2002/QĐ-NHNN",
+          "target_surface": "Quyết định số 28/2002/QĐ-NHNN",
+          "valid_from": "2017-03-15",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 3,
+          "kind": "repeal",
+          "source_path": "dieu:33/khoan:2/diem:c",
+          "target_doc": "127/2005/QĐ-NHNN",
+          "target_surface": "Quyết định số 127/2005/QĐ-NHNN",
+          "valid_from": "2017-03-15",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 4,
+          "kind": "repeal",
+          "source_path": "dieu:33/khoan:2/diem:d",
+          "target_doc": "783/2005/QĐ-NHNN",
+          "target_surface": "Quyết định số 783/2005/QĐ-NHNN",
+          "valid_from": "2017-03-15",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 5,
+          "kind": "repeal",
+          "source_path": "dieu:33/khoan:2/diem:đ",
+          "target_doc": "12/2010/TT-NHNN",
+          "target_surface": "Thông tư số 12/2010/TT-NHNN",
+          "valid_from": "2017-03-15",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 6,
+          "kind": "repeal",
+          "source_path": "dieu:33/khoan:2/diem:e",
+          "target_doc": "05/2011/TT-NHNN",
+          "target_surface": "Thông tư số 05/2011/TT-NHNN",
+          "valid_from": "2017-03-15",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 7,
+          "kind": "repeal",
+          "source_path": "dieu:33/khoan:2/diem:g",
+          "target_doc": "33/2011/TT-NHNN",
+          "target_surface": "Thông tư số 33/2011/TT-NHNN",
+          "valid_from": "2017-03-15",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 8,
+          "kind": "repeal",
+          "source_path": "dieu:33/khoan:2/diem:h",
+          "target_doc": "08/2014/TT-NHNN",
+          "target_surface": "Thông tư số 08/2014/TT-NHNN",
+          "valid_from": "2017-03-15",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 9,
+          "kind": "norm_decl",
+          "source_path": "dieu:33/khoan:2",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "các văn bản sau đây hết hiệu lực thi hành",
+          "valid_from": "2017-03-15",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "TT39 kế vị QĐ 1627/2001 với tư cách norm 'quy chế cho vay' (D-09)"
+        }
+      ],
+      "expected_transitions": [
+        {
+          "source_path": "dieu:34",
+          "surface": "Đối với các hợp đồng tín dụng được ký kết trước ngày Thông tư này có hiệu lực thi hành",
+          "scope_predicate": {
+            "contract_signed_before": "2017-03-15"
+          }
+        }
+      ],
+      "expected_norm_events": [
+        {
+          "norm": "hoat-dong-cho-vay",
+          "event": "succession",
+          "from": "1627/2001/QĐ-NHNN",
+          "to": "39/2016/TT-NHNN",
+          "at": "2017-03-15"
+        }
+      ],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "Luật Ngân hàng Nhà nước Việt Nam 2010",
+          "surface": "Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "47/2010/QH12",
+          "surface": "Căn cứ Luật Các tổ chức tín dụng ngày 16 tháng 6 năm 2010"
+        },
+        {
+          "source_path": "dieu:26/khoan:1",
+          "type": "pinpoint",
+          "target": "47/2010/QH12 dieu:126,127,128",
+          "surface": "Điều 126, Điều 127, Điều 128 Luật các tổ chức tín dụng"
+        },
+        {
+          "source_path": "dieu:26/khoan:1",
+          "type": "chu_de",
+          "target": "NORM:gioi-han-ty-le-bao-dam-an-toan",
+          "surface": "quy định của Ngân hàng Nhà nước Việt Nam về các giới hạn, tỷ lệ bảo đảm an toàn trong hoạt động của tổ chức tín dụng"
+        },
+        {
+          "source_path": "dieu:7/khoan:5",
+          "type": "dinh_nghia",
+          "target": "SELF dieu:13/khoan:2",
+          "surface": "lãi suất cho vay quy định tại khoản 2 Điều 13 Thông tư này"
+        },
+        {
+          "source_path": "dieu:25/khoan:1",
+          "type": "ngoai_le",
+          "target": "SELF dieu:13/khoan:4",
+          "surface": "trừ trường hợp quy định tại khoản 4 Điều 13 Thông tư này"
+        },
+        {
+          "source_path": "dieu:34",
+          "type": "chuyen_tiep",
+          "target": "COHORT:contract_signed_before=2017-03-15",
+          "surface": "hợp đồng tín dụng được ký kết trước ngày Thông tư này có hiệu lực thi hành"
+        }
+      ],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "06/2023/TT-NHNN",
+      "slug": "tt-06-2023-tt-nhnn",
+      "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 39/2016/TT-NHNN",
+      "doc_type": "thong_tu",
+      "sha256": "bbdd1bd91741967eb9e8e7d1353dbde23ea28a1598aae19b8152d394bc55d4ae",
+      "issued_date": "2023-06-28",
+      "issued_date_quote": "Hà Nội, ngày 28 tháng 6 năm 2023",
+      "effective_date": "2023-09-01",
+      "effective_date_quote": "Thông tư này có hiệu lực thi hành từ ngày 01 tháng 9 năm 2023",
+      "synthetic": false,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/thong-tu-06-2023-tt-nhnn-sua-doi-tt-39-2016-ve-hoat-dong-cho-vay-257364-d1.html",
+      "transcription_notes": [
+        "đối chiếu Công báo (congbao.chinhphu.vn 813+814): Ban hành 28/06/2023, Hiệu lực 01/09/2023 — khớp",
+        "typo transcription giữ nguyên: 'Điều 32c. Dư nự cho vay', 'thiêt lập', 'phưong tiện' (trap 02 §7.18)"
+      ],
+      "counts": {
+        "dieu": 4,
+        "khoan": 13,
+        "diem": 13,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:1/diem:a",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "điểm c khoản 6",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:2/khoan:6/diem:c"
+        },
+        {
+          "seq": 2,
+          "kind": "insert",
+          "source_path": "dieu:1/khoan:1/diem:b",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Bổ sung khoản 12",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:2/khoan:12"
+        },
+        {
+          "seq": 3,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:2",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung Điều 8",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:8",
+          "notes": "replace toàn Điều 8: 6 khoản → 10 khoản; khoản 8, 9, 10 là NODE MỚI (birth-id mới); con tái cấu trúc → tương chiếu non-binding D-08"
+        },
+        {
+          "seq": 4,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:3",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "khoản 2 Điều 11",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:11/khoan:2"
+        },
+        {
+          "seq": 5,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:4",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "khoản 2 Điều 13",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:13/khoan:2"
+        },
+        {
+          "seq": 6,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:5",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "khoản 4 Điều 18",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:18/khoan:4"
+        },
+        {
+          "seq": 7,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:6/diem:a",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung khoản 1 như sau",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:22/khoan:1"
+        },
+        {
+          "seq": 8,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:6/diem:b",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "điểm a khoản 2",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:22/khoan:2/diem:a"
+        },
+        {
+          "seq": 9,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:6/diem:c",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "điểm b khoản 2",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:22/khoan:2/diem:b"
+        },
+        {
+          "seq": 10,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:6/diem:d",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "điểm c khoản 2",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:22/khoan:2/diem:c"
+        },
+        {
+          "seq": 11,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:6/diem:đ",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "điểm e khoản 2",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:22/khoan:2/diem:e"
+        },
+        {
+          "seq": 12,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:6/diem:e",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "điểm g khoản 2",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:22/khoan:2/diem:g"
+        },
+        {
+          "seq": 13,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:7",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "điểm b khoản 4 Điều 23",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:23/khoan:4/diem:b"
+        },
+        {
+          "seq": 14,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:8",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "khoản 2 Điều 24",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:24/khoan:2",
+          "notes": "op này bị BÃI BỎ bởi khoản 2 Điều 4 TT12/2024 từ 2024-07-01 (op-nhắm-op thật)"
+        },
+        {
+          "seq": 15,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:9/diem:a",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung khoản 2 như sau",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:26/khoan:2"
+        },
+        {
+          "seq": 16,
+          "kind": "insert",
+          "source_path": "dieu:1/khoan:9/diem:b",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Bổ sung khoản 5 như sau",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:26/khoan:5",
+          "notes": "op này bị BÃI BỎ bởi khoản 2 Điều 4 TT12/2024 từ 2024-07-01"
+        },
+        {
+          "seq": 17,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:10/diem:a",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung khoản 1 như sau",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:27/khoan:1"
+        },
+        {
+          "seq": 18,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:10/diem:b",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung khoản 4 như sau",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:27/khoan:4"
+        },
+        {
+          "seq": 19,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:10/diem:c",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung khoản 5 như sau",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:27/khoan:5"
+        },
+        {
+          "seq": 20,
+          "kind": "insert",
+          "source_path": "dieu:1/khoan:11",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Bổ sung Mục 3 Chương II",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "chuong:II/muc:3",
+          "notes": "sinh 8 node Điều mới: 32a, 32b, 32c, 32d, 32đ, 32e, 32g, 32h (cho vay bằng phương tiện điện tử)"
+        },
+        {
+          "seq": 21,
+          "kind": "repeal",
+          "source_path": "dieu:2",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Bãi bỏ khoản 5 Điều 7",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:7/khoan:5",
+          "notes": "op nằm TRỌN trong heading — điều một dòng (trap 02 §7.11)"
+        }
+      ],
+      "expected_transitions": [
+        {
+          "source_path": "dieu:4/khoan:2",
+          "surface": "các thỏa thuận cho vay, hợp đồng tín dụng được ký kết trước ngày Thông tư này có hiệu lực thi hành",
+          "scope_predicate": {
+            "contract_signed_before": "2023-09-01",
+            "not_amended_on_or_after": "2023-09-01"
+          }
+        }
+      ],
+      "expected_norm_events": [
+        {
+          "norm": "cho-vay-bang-phuong-tien-dien-tu",
+          "event": "birth",
+          "by": "06/2023/TT-NHNN dieu:1/khoan:11",
+          "at": "2023-09-01"
+        }
+      ],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "Luật Ngân hàng Nhà nước Việt Nam 2010",
+          "surface": "Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "47/2010/QH12 + 17/2017/QH14",
+          "surface": "Luật sửa đổi, bổ sung một số điều của Luật Các tổ chức tín dụng ngày 20 tháng 11 năm 2017"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "102/2022/NĐ-CP",
+          "surface": "Căn cứ Nghị định số 102/2022/NĐ-CP"
+        },
+        {
+          "source_path": "dieu:4/khoan:2",
+          "type": "chuyen_tiep",
+          "target": "COHORT:contract_signed_before=2023-09-01",
+          "surface": "tiếp tục thực hiện các nội dung trong thỏa thuận cho vay, hợp đồng tín dụng đã ký kết"
+        },
+        {
+          "source_path": "dieu:3",
+          "type": "pinpoint",
+          "target": "SELF (thi hành)",
+          "surface": "Chánh Văn phòng, Vụ trưởng Vụ Chính sách tiền tệ"
+        }
+      ],
+      "amending_nodes": [
+        "dieu:1/khoan:1",
+        "dieu:1/khoan:2",
+        "dieu:1/khoan:3",
+        "dieu:1/khoan:4",
+        "dieu:1/khoan:5",
+        "dieu:1/khoan:6",
+        "dieu:1/khoan:7",
+        "dieu:1/khoan:8",
+        "dieu:1/khoan:9",
+        "dieu:1/khoan:10",
+        "dieu:1/khoan:11"
+      ]
+    },
+    {
+      "doc_key": "10/2023/TT-NHNN",
+      "slug": "tt-10-2023-tt-nhnn",
+      "title": "Thông tư ngưng hiệu lực thi hành một số nội dung của Thông tư số 39/2016/TT-NHNN (đã được bổ sung tại Thông tư số 06/2023/TT-NHNN)",
+      "doc_type": "thong_tu",
+      "sha256": "8035323ac0c86bc99b53300f724ac4b0859088b5018674251a7086a8267cb066",
+      "issued_date": "2023-08-23",
+      "issued_date_quote": "Hà Nội, ngày 23 tháng 8 năm 2023",
+      "effective_date": "2023-09-01",
+      "effective_date_quote": "Thông tư này có hiệu lực thi hành từ ngày 01 tháng 9 năm 2023.",
+      "synthetic": false,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/thong-tu-10-2023-tt-nhnn-ngung-hieu-luc-mot-phan-tt-39-2016-va-tt-06-2023-264658-d1.html",
+      "transcription_notes": [
+        "đối chiếu Công báo (congbao.chinhphu.vn): khớp ngày ban hành/hiệu lực"
+      ],
+      "counts": {
+        "dieu": 3,
+        "khoan": 0,
+        "diem": 0,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "suspend",
+          "source_path": "dieu:1",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "khoản 8",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:8/khoan:8",
+          "valid_to_event": "cho đến ngày có hiệu lực thi hành của văn bản quy phạm pháp luật mới quy định về các vấn đề này",
+          "notes": "node đích được TT06 bổ sung, bị treo TRƯỚC khi kịp có hiệu lực → operative interval RỖNG"
+        },
+        {
+          "seq": 2,
+          "kind": "suspend",
+          "source_path": "dieu:1",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "khoản 9",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:8/khoan:9",
+          "valid_to_event": "cho đến ngày có hiệu lực thi hành của văn bản quy phạm pháp luật mới quy định về các vấn đề này"
+        },
+        {
+          "seq": 3,
+          "kind": "suspend",
+          "source_path": "dieu:1",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "khoản 10 Điều 8",
+          "valid_from": "2023-09-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:8/khoan:10",
+          "valid_to_event": "cho đến ngày có hiệu lực thi hành của văn bản quy phạm pháp luật mới quy định về các vấn đề này"
+        }
+      ],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "Luật Ngân hàng Nhà nước Việt Nam 2010",
+          "surface": "Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "47/2010/QH12",
+          "surface": "Căn cứ Luật Các tổ chức tín dụng ngày 16 tháng 6 năm 2010"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "102/2022/NĐ-CP",
+          "surface": "Căn cứ Nghị định số 102/2022/NĐ-CP"
+        },
+        {
+          "source_path": "dieu:1",
+          "type": "pinpoint",
+          "target": "06/2023/TT-NHNN dieu:1/khoan:2",
+          "surface": "đã được bổ sung theo khoản 2 Điều 1 Thông tư số 06/2023/TT-NHNN"
+        },
+        {
+          "source_path": "dieu:1",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:8",
+          "surface": "khoản 10 Điều 8 của Thông tư số 39/2016/TT-NHNN"
+        }
+      ],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "12/2024/TT-NHNN",
+      "slug": "tt-12-2024-tt-nhnn",
+      "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 39/2016/TT-NHNN",
+      "doc_type": "thong_tu",
+      "sha256": "724cb37a474b4003d8714ed1e38c061f529cd99828f6b39432875c7ea91cb5e3",
+      "issued_date": "2024-06-28",
+      "issued_date_quote": "Hà Nội, ngày 28 tháng 6 năm 2024",
+      "effective_date": "2024-07-01",
+      "effective_date_quote": "Thông tư này có hiệu lực từ ngày 01 tháng 7 năm 2024.",
+      "synthetic": false,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/thong-tu-12-2024-tt-nhnn-sua-doi-tt-39-2016-tt-nhnn-quy-dinh-ve-hoat-dong-cho-vay-358296-d1.html",
+      "transcription_notes": [],
+      "counts": {
+        "dieu": 4,
+        "khoan": 11,
+        "diem": 11,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:1/diem:a",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung khoản 1 như sau",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:2/khoan:1"
+        },
+        {
+          "seq": 2,
+          "kind": "insert",
+          "source_path": "dieu:1/khoan:1/diem:b",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Bổ sung khoản 13 như sau",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:2/khoan:13"
+        },
+        {
+          "seq": 3,
+          "kind": "insert",
+          "source_path": "dieu:1/khoan:1/diem:c",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Bổ sung khoản 14 như sau",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:2/khoan:14"
+        },
+        {
+          "seq": 4,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:2",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "khoản 2 Điều 4",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:4/khoan:2"
+        },
+        {
+          "seq": 5,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:3",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "khoản 3 Điều 7",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:7/khoan:3"
+        },
+        {
+          "seq": 6,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:4",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung Điều 9",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:9",
+          "notes": "replace toàn Điều 9 → con mới (D-08)"
+        },
+        {
+          "seq": 7,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:5",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "khoản 2 Điều 16",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:16/khoan:2"
+        },
+        {
+          "seq": 8,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:6/diem:a",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "điểm b(iii) khoản 2",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:22/khoan:2/diem:b/tiet:iii",
+          "notes": "target cấp TIẾT; chain-cite: Đ22 'đã được sửa đổi, bổ sung bởi điểm c, d khoản 6 Điều 1 Thông tư số 06/2023/TT-NHNN'"
+        },
+        {
+          "seq": 9,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:6/diem:b",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "điểm c(iii) khoản 2",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:22/khoan:2/diem:c/tiet:iii"
+        },
+        {
+          "seq": 10,
+          "kind": "insert",
+          "source_path": "dieu:1/khoan:6/diem:c",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Bổ sung điểm c(iv) khoản 2",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:22/khoan:2/diem:c/tiet:iv"
+        },
+        {
+          "seq": 11,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:7",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung Điều 24",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:24",
+          "notes": "replace toàn Điều 24 (bản đã được k8 Đ1 TT06 sửa) — chain qua op"
+        },
+        {
+          "seq": 12,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:8/diem:a",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung khoản 1 như sau",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:26/khoan:1"
+        },
+        {
+          "seq": 13,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:8/diem:b",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung khoản 3 như sau",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:26/khoan:3"
+        },
+        {
+          "seq": 14,
+          "kind": "insert",
+          "source_path": "dieu:1/khoan:8/diem:c",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Bổ sung khoản 5 như sau",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:26/khoan:5",
+          "notes": "tái-sinh k5 Đ26 với text mới sau khi op TT06 (điểm b khoản 9 Đ1) bị bãi bỏ bởi chính TT12 — xem op 20"
+        },
+        {
+          "seq": 15,
+          "kind": "insert",
+          "source_path": "dieu:1/khoan:8/diem:d",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Bổ sung khoản 6 như sau",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:26/khoan:6"
+        },
+        {
+          "seq": 16,
+          "kind": "insert",
+          "source_path": "dieu:1/khoan:8/diem:đ",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Bổ sung khoản 7 như sau",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:26/khoan:7"
+        },
+        {
+          "seq": 17,
+          "kind": "repeal",
+          "source_path": "dieu:2",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Bãi bỏ Điều 29",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:29"
+        },
+        {
+          "seq": 18,
+          "kind": "repeal",
+          "source_path": "dieu:2",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Điều 32 Thông tư số 39/2016/TT-NHNN",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:32"
+        },
+        {
+          "seq": 19,
+          "kind": "repeal",
+          "source_path": "dieu:2",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Điều 32g Thông tư số 39/2016/TT-NHNN đã được sửa đổi, bổ sung bởi khoản 11 Điều 1 Thông tư số 06/2023/TT-NHNN",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:32g",
+          "notes": "target là node do op TT06 k11 sinh ra"
+        },
+        {
+          "seq": 20,
+          "kind": "repeal",
+          "source_path": "dieu:4/khoan:2",
+          "target_doc": "06/2023/TT-NHNN",
+          "target_surface": "Bãi bỏ khoản 8, điểm b khoản 9 Điều 1 Thông tư số 06/2023/TT-NHNN",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": true,
+          "target_op": {
+            "doc": "06/2023/TT-NHNN",
+            "paths": [
+              "dieu:1/khoan:8",
+              "dieu:1/khoan:9/diem:b"
+            ]
+          },
+          "notes": "OP-NHẮM-OP THẬT: 2 op đích (amend k2 Đ24, insert k5 Đ26 của TT06); cửa sổ 2023-09-01→2024-07-01 bất khả xâm phạm (D-10); liệt kê 1 entry vì cùng câu — extractor tách 2 op là hợp lệ"
+        }
+      ],
+      "expected_transitions": [
+        {
+          "source_path": "dieu:4/khoan:3",
+          "surface": "các thỏa thuận cho vay, hợp đồng tín dụng được ký kết trước ngày Thông tư này có hiệu lực thi hành",
+          "scope_predicate": {
+            "contract_signed_before": "2024-07-01",
+            "not_amended_on_or_after": "2024-07-01"
+          }
+        }
+      ],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "32/2024/QH15",
+          "surface": "Căn cứ Luật Các tổ chức tín dụng ngày 18 tháng 01 năm 2024"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "102/2022/NĐ-CP",
+          "surface": "Căn cứ Nghị định số 102/2022/NĐ-CP"
+        },
+        {
+          "source_path": "dieu:1/khoan:1/diem:b",
+          "type": "pinpoint",
+          "target": "32/2024/QH15 dieu:102/khoan:2",
+          "surface": "khoản 2 Điều 102 Luật Các tổ chức tín dụng"
+        },
+        {
+          "source_path": "dieu:1/khoan:1/diem:c",
+          "type": "pinpoint",
+          "target": "32/2024/QH15 dieu:4/khoan:24",
+          "surface": "khoản 24 Điều 4 Luật Các tổ chức tín dụng"
+        },
+        {
+          "source_path": "dieu:4/khoan:3",
+          "type": "chuyen_tiep",
+          "target": "COHORT:contract_signed_before=2024-07-01",
+          "surface": "tiếp tục thực hiện các nội dung trong thỏa thuận cho vay, hợp đồng tín dụng đã ký kết"
+        }
+      ],
+      "amending_nodes": [
+        "dieu:1/khoan:1",
+        "dieu:1/khoan:2",
+        "dieu:1/khoan:3",
+        "dieu:1/khoan:4",
+        "dieu:1/khoan:5",
+        "dieu:1/khoan:6",
+        "dieu:1/khoan:7",
+        "dieu:1/khoan:8"
+      ]
+    },
+    {
+      "doc_key": "91/2015/QH13",
+      "slug": "blds-91-2015-qh13-trich",
+      "title": "Bộ luật Dân sự (TRÍCH: Đ463–471 Mục 4 Hợp đồng vay tài sản + Đ688–689)",
+      "doc_type": "bo_luat",
+      "sha256": "711818ca93ecc0a584e2762df823fef6df22d90254e4c7755b9cca70e0e77fac",
+      "issued_date": "2015-11-24",
+      "issued_date_quote": "thông qua ngày 24 tháng 11 năm 2015",
+      "effective_date": "2017-01-01",
+      "effective_date_quote": "Bộ luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2017.",
+      "synthetic": false,
+      "is_oracle": false,
+      "excerpt": true,
+      "excerpt_spec": "header; PHẦN THỨ BA/Chương XVI/Mục 4: Điều 463–471; PHẦN THỨ SÁU: Điều 688–689",
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/dan-su/bo-luat-dan-su-2015-so-91-2015-qh13-101333-d1.html",
+      "transcription_notes": [],
+      "counts": {
+        "dieu": 11,
+        "khoan": 20,
+        "diem": 6,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "repeal",
+          "source_path": "dieu:689",
+          "target_doc": "33/2005/QH11",
+          "target_surface": "Bộ luật dân sự số 33/2005/QH11 hết hiệu lực",
+          "valid_from": "2017-01-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 2,
+          "kind": "norm_decl",
+          "source_path": "dieu:689",
+          "target_doc": "91/2015/QH13",
+          "target_surface": "Bộ luật dân sự số 33/2005/QH11 hết hiệu lực kể từ ngày Bộ luật này có hiệu lực.",
+          "valid_from": "2017-01-01",
+          "target_part": "body",
+          "target_is_op": false
+        }
+      ],
+      "expected_transitions": [
+        {
+          "source_path": "dieu:688/khoan:1",
+          "surface": "giao dịch dân sự được xác lập trước ngày Bộ luật này có hiệu lực",
+          "scope_predicate": {
+            "contract_signed_before": "2017-01-01"
+          },
+          "notes": "Đ688 chi tiết hơn DSL D-25 v1 (phân nhánh đã/chưa thực hiện) — ghi xấp xỉ, chi tiết trong text"
+        }
+      ],
+      "expected_norm_events": [
+        {
+          "norm": "bo-luat-dan-su",
+          "event": "succession",
+          "from": "33/2005/QH11",
+          "to": "91/2015/QH13",
+          "at": "2017-01-01"
+        }
+      ],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "Hiến pháp 2013",
+          "surface": "Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam"
+        },
+        {
+          "source_path": "dieu:468/khoan:1",
+          "type": "ngoai_le",
+          "target": "FRONTIER:luật khác có liên quan",
+          "surface": "trừ trường hợp luật khác có liên quan quy định khác"
+        },
+        {
+          "source_path": "dieu:468/khoan:2",
+          "type": "dinh_nghia",
+          "target": "SELF dieu:468/khoan:1",
+          "surface": "mức lãi suất giới hạn quy định tại khoản 1 Điều này"
+        },
+        {
+          "source_path": "dieu:466/khoan:4",
+          "type": "pinpoint",
+          "target": "SELF dieu:468/khoan:2",
+          "surface": "lãi suất theo quy định tại khoản 2 Điều 468 của Bộ luật này"
+        },
+        {
+          "source_path": "dieu:688/khoan:1",
+          "type": "chuyen_tiep",
+          "target": "COHORT:xác lập trước 2017-01-01",
+          "surface": "Giao dịch dân sự chưa được thực hiện mà có nội dung, hình thức khác với quy định của Bộ luật này"
+        }
+      ],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "01/2019/NQ-HĐTP",
+      "slug": "nq-01-2019-nq-hdtp",
+      "title": "Nghị quyết hướng dẫn áp dụng một số quy định của pháp luật về lãi, lãi suất, phạt vi phạm",
+      "doc_type": "nghi_quyet_hdtp",
+      "sha256": "433d138ab4a925a44151d4ecd996a961e7bb04a2fb173441e3482f19ccb8d607",
+      "issued_date": "2019-01-11",
+      "issued_date_quote": "Hà Nội, ngày 11 tháng 01 năm 2019",
+      "effective_date": "2019-03-15",
+      "effective_date_quote": "có hiệu lực thi hành kể từ ngày 15 tháng 3 năm 2019",
+      "synthetic": false,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/nghi-quyet-01-2019-nq-hdtp-huong-dan-quy-dinh-ve-lai-lai-suat-phat-vi-pham-170790-d1.html",
+      "transcription_notes": [],
+      "counts": {
+        "dieu": 14,
+        "khoan": 27,
+        "diem": 22,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [],
+      "expected_transitions": [],
+      "expected_norm_events": [
+        {
+          "norm": "tran-lai-suat-hdtd",
+          "event": "conflict_resolution",
+          "by": "01/2019/NQ-HĐTP dieu:7",
+          "at": "2019-03-15",
+          "notes": "statement giải certificate Đ468 BLDS vs cơ chế lãi suất TCTD: HĐ tín dụng KHÔNG áp trần BLDS (đóng pending_event, resolved_by_op — 02 §6.2)"
+        }
+      ],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "Luật Tổ chức TAND 2014",
+          "surface": "Căn cứ Luật Tổ chức Tòa án nhân dân ngày 24 tháng 11 năm 2014"
+        },
+        {
+          "source_path": "dieu:7/khoan:1",
+          "type": "chu_de",
+          "target": "NORM:luat-cac-tctd",
+          "surface": "phải phù hợp với quy định của Luật Các tổ chức tín dụng"
+        },
+        {
+          "source_path": "dieu:7/khoan:2",
+          "type": "pinpoint",
+          "target": "91/2015/QH13 (giới hạn lãi suất)",
+          "surface": "không áp dụng quy định về giới hạn lãi suất của Bộ luật Dân sự năm 2005, Bộ luật Dân sự năm 2015"
+        },
+        {
+          "source_path": "dieu:13/khoan:1",
+          "type": "pinpoint",
+          "target": "91/2015/QH13 dieu:357,468",
+          "surface": "mức lãi suất quy định tại Điều 357, Điều 468 của Bộ luật Dân sự năm 2015"
+        },
+        {
+          "source_path": "dieu:5",
+          "type": "pinpoint",
+          "target": "91/2015/QH13 dieu:468",
+          "surface": "Bộ luật Dân sự năm 2015"
+        }
+      ],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "47/2010/QH12",
+      "slug": "luat-47-2010-qh12-trich",
+      "title": "Luật Các tổ chức tín dụng (TRÍCH: Đ1–4, Đ90–96, Đ126–128, Đ161–163)",
+      "doc_type": "luat",
+      "sha256": "73ab878367039503fda0bf7c1f114cbfff1c242fafe8c075fd4d5f712281660c",
+      "issued_date": "2010-06-16",
+      "issued_date_quote": "thông qua ngày 16 tháng 6 năm 2010",
+      "effective_date": "2011-01-01",
+      "effective_date_quote": "Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2011.",
+      "synthetic": false,
+      "is_oracle": false,
+      "excerpt": true,
+      "excerpt_spec": "Đ1–Đ4 (phạm vi, giải thích từ ngữ); Đ90–96 (lãi suất, cấp tín dụng); Đ126–128; Đ161–163 (chuyển tiếp, hiệu lực)",
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/luat-to-chuc-tin-dung-2010-53468-d1.html",
+      "transcription_notes": [
+        "văn bản đã HẾT HIỆU LỰC từ 2024-07-01 (bị 32/2024/QH15 thay thế, trừ các khoản chuyển tiếp Đ210) — giữ trong corpus cho point-in-time"
+      ],
+      "counts": {
+        "dieu": 17,
+        "khoan": 88,
+        "diem": 36,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "repeal",
+          "source_path": "dieu:162/khoan:2",
+          "target_doc": "02/1997/QH10",
+          "target_surface": "Luật các tổ chức tín dụng số 02/1997/QH10",
+          "valid_from": "2011-01-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 2,
+          "kind": "repeal",
+          "source_path": "dieu:162/khoan:2",
+          "target_doc": "20/2004/QH11",
+          "target_surface": "Luật sửa đổi, bổ sung một số điều của Luật các tổ chức tín dụng số 20/2004/QH11",
+          "valid_from": "2011-01-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 3,
+          "kind": "norm_decl",
+          "source_path": "dieu:162/khoan:2",
+          "target_doc": "47/2010/QH12",
+          "target_surface": "hết hiệu lực kể từ ngày Luật này có hiệu lực",
+          "valid_from": "2011-01-01",
+          "target_part": "body",
+          "target_is_op": false
+        }
+      ],
+      "expected_transitions": [],
+      "expected_norm_events": [
+        {
+          "norm": "luat-cac-tctd",
+          "event": "succession",
+          "from": "02/1997/QH10",
+          "to": "47/2010/QH12",
+          "at": "2011-01-01"
+        }
+      ],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "Hiến pháp 1992 (sđ 2001)",
+          "surface": "Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam năm 1992"
+        },
+        {
+          "source_path": "dieu:3/khoan:2",
+          "type": "chu_de",
+          "target": "PRECEDENCE-STATEMENT (D-15)",
+          "surface": "Trường hợp có quy định khác nhau giữa Luật này và các luật khác có liên quan"
+        },
+        {
+          "source_path": "dieu:91/khoan:1",
+          "type": "chu_de",
+          "target": "NORM:lai-suat-thoa-thuan",
+          "surface": "được quyền ấn định và phải niêm yết công khai mức lãi suất huy động vốn, mức phí cung ứng dịch vụ"
+        },
+        {
+          "source_path": "dieu:126/khoan:1",
+          "type": "dinh_nghia",
+          "target": "SELF dieu:4",
+          "surface": "Tổ chức tín dụng, chi nhánh ngân hàng nước ngoài"
+        },
+        {
+          "source_path": "dieu:94/khoan:1",
+          "type": "chu_de",
+          "target": "NORM:xet-duyet-cap-tin-dung",
+          "surface": "Tổ chức tín dụng phải yêu cầu khách hàng cung cấp tài liệu chứng minh"
+        }
+      ],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "32/2024/QH15",
+      "slug": "luat-32-2024-qh15-trich",
+      "title": "Luật Các tổ chức tín dụng (TRÍCH: Đ1–4, Đ100–103, Đ134–136, Đ209–210)",
+      "doc_type": "luat",
+      "sha256": "a7f40d73c365a7c177e0193db7986a1f2f0cc4fa6ef2dea6e567209258882903",
+      "issued_date": "2024-01-18",
+      "issued_date_quote": "thông qua ngày 18 tháng 01 năm 2024",
+      "effective_date": "2024-07-01",
+      "effective_date_quote": "Luật này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2024, trừ quy định tại khoản 2 Điều này.",
+      "synthetic": false,
+      "is_oracle": false,
+      "excerpt": true,
+      "excerpt_spec": "Đ1–Đ4; Đ100–103 (lãi suất, xét duyệt cấp tín dụng); Đ134–136; Đ209–210 (hiệu lực + chuyển tiếp)",
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/luat-cac-to-chuc-tin-dung-2024-so-32-2024-qh15-296639-d1.html",
+      "transcription_notes": [
+        "hiệu lực PHÂN KỲ thật: khoản 3 Điều 200 và khoản 15 Điều 210 hiệu lực 2025-01-01 (Đ209 k2 — hai node đó ngoài trích đoạn)"
+      ],
+      "counts": {
+        "dieu": 13,
+        "khoan": 109,
+        "diem": 50,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "repeal",
+          "source_path": "dieu:209/khoan:3",
+          "target_doc": "47/2010/QH12",
+          "target_surface": "Luật Các tổ chức tín dụng số 47/2010/QH12 đã được sửa đổi, bổ sung một số điều theo Luật số 17/2017/QH14 hết hiệu lực",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "có ngoại lệ: trừ quy định tại các khoản 1, 2, 3, 4, 8, 9, 12 và 14 Điều 210"
+        },
+        {
+          "seq": 2,
+          "kind": "norm_decl",
+          "source_path": "dieu:209/khoan:3",
+          "target_doc": "32/2024/QH15",
+          "target_surface": "hết hiệu lực kể từ ngày Luật này có hiệu lực thi hành",
+          "valid_from": "2024-07-01",
+          "target_part": "body",
+          "target_is_op": false
+        }
+      ],
+      "expected_transitions": [
+        {
+          "source_path": "dieu:210/khoan:2",
+          "surface": "Hợp đồng, giao dịch khác, thỏa thuận được ký kết trước ngày Luật này có hiệu lực thi hành",
+          "scope_predicate": {
+            "contract_signed_before": "2024-07-01"
+          }
+        }
+      ],
+      "expected_norm_events": [
+        {
+          "norm": "luat-cac-tctd",
+          "event": "succession",
+          "from": "47/2010/QH12",
+          "to": "32/2024/QH15",
+          "at": "2024-07-01"
+        }
+      ],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "Hiến pháp 2013",
+          "surface": "Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam"
+        },
+        {
+          "source_path": "dieu:100/khoan:2",
+          "type": "chu_de",
+          "target": "NORM:lai-suat-thoa-thuan",
+          "surface": "có quyền thỏa thuận về lãi suất, phí cấp tín dụng"
+        },
+        {
+          "source_path": "dieu:134",
+          "type": "ngoai_le",
+          "target": "SELF dieu:135",
+          "surface": "Hạn chế cấp tín dụng"
+        },
+        {
+          "source_path": "dieu:209/khoan:2",
+          "type": "pinpoint",
+          "target": "SELF dieu:200/khoan:3 + dieu:210/khoan:15",
+          "surface": "Khoản 3 Điều 200 và khoản 15 Điều 210 của Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2025"
+        },
+        {
+          "source_path": "dieu:210/khoan:2",
+          "type": "chuyen_tiep",
+          "target": "COHORT:contract_signed_before=2024-07-01",
+          "surface": "được tiếp tục thực hiện theo hợp đồng, giao dịch khác, thỏa thuận đã ký kết"
+        }
+      ],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "41/2016/TT-NHNN",
+      "slug": "tt-41-2016-tt-nhnn-trich",
+      "title": "Thông tư quy định tỷ lệ an toàn vốn đối với ngân hàng, chi nhánh ngân hàng nước ngoài (TRÍCH + Phụ lục 3 nguyên vẹn)",
+      "doc_type": "thong_tu",
+      "sha256": "a3e7aeb42bee5c74dcbeeac05e13f9c0a05f747871d621bbc2a434dbc11ea89c",
+      "issued_date": "2016-12-30",
+      "issued_date_quote": "ngày 30 tháng 12 năm 2016",
+      "effective_date": "2020-01-01",
+      "effective_date_quote": "Thông tư này có hiệu lực thi hành kể từ ngày 01 tháng 01 năm 2020, trừ trường hợp quy định tại khoản 2 Điều này.",
+      "synthetic": false,
+      "is_oracle": false,
+      "excerpt": true,
+      "excerpt_spec": "Đ1, Đ2, Đ6–7, Đ16, Đ23–24; PHỤ LỤC 3 nguyên vẹn (Chỉ số kinh doanh)",
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/thong-tu-41-2016-tt-nhnn-cua-ngan-hang-nha-nuoc-viet-nam-ve-viec-quy-dinh-ty-le-an-toan-von-doi-voi-ngan-hang-chi-nhanh-ngan-hang-nuoc-ngoai-111599-d1.html",
+      "transcription_notes": [
+        "Đ16 k1: dòng '1.' của công thức KOR mất trong transcription (bảng công thức vỡ dòng) — file đếm được 2 khoản tại Đ16, bản gốc có 3",
+        "Đ23 hiển thị theo bản gốc 2016 (opt-in sớm); Đ23 bị k2 Đ24 TT22/2019 thay thế từ 2020-01-01 rồi bị k2 Đ1 TT26/2022 thay tiếp từ 2022-12-31 — chuỗi op nằm ở các doc kia"
+      ],
+      "counts": {
+        "dieu": 7,
+        "khoan": 47,
+        "diem": 70,
+        "tiet": 14,
+        "phuluc": 1
+      },
+      "expected_ops": [],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "46/2010/QH12",
+          "surface": "Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "47/2010/QH12",
+          "surface": "Căn cứ Luật các tổ chức tín dụng số 47/2010/QH12"
+        },
+        {
+          "source_path": "dieu:16",
+          "type": "pinpoint",
+          "target": "SELF phuluc:3",
+          "surface": "Chỉ số kinh doanh được xác định theo hướng dẫn tại Phụ lục 3 ban hành kèm theo Thông tư này"
+        },
+        {
+          "source_path": "dieu:2",
+          "type": "frontier",
+          "target": "Moody's/S&P/Fitch (ngoài kho)",
+          "surface": "Tổ chức xếp hạng tín nhiệm Moody’s, Standard & Poor, Fitch Rating"
+        },
+        {
+          "source_path": "dieu:6",
+          "type": "dinh_nghia",
+          "target": "SELF dieu:2",
+          "surface": "Tỷ lệ an toàn vốn (CAR) tính theo đơn vị phần trăm (%)"
+        }
+      ],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "22/2019/TT-NHNN",
+      "slug": "tt-22-2019-tt-nhnn-trich",
+      "title": "Thông tư quy định các giới hạn, tỷ lệ bảo đảm an toàn trong hoạt động của ngân hàng, chi nhánh ngân hàng nước ngoài (TRÍCH)",
+      "doc_type": "thong_tu",
+      "sha256": "2f4f828c5c97d0705f27123ed07ee118fb5ba0930c43ce37841351620bc05144",
+      "issued_date": "2019-11-15",
+      "issued_date_quote": "ngày 15 tháng 11 năm 2019",
+      "effective_date": "2020-01-01",
+      "effective_date_quote": "Thông tư này có hiệu lực thi hành kể từ ngày 01 tháng 01 năm 2020.",
+      "synthetic": false,
+      "is_oracle": false,
+      "excerpt": true,
+      "excerpt_spec": "Đ1–3, Đ6–8, Đ20 (LDR), Đ21–25 (chuyển tiếp + hiệu lực, gồm khoản sửa đổi TT41)",
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/thong-tu-22-2019-tt-nhnn-gioi-han-ty-le-bao-dam-an-toan-trong-hoat-dong-cua-ngan-hang-178446-d1.html",
+      "transcription_notes": [
+        "Đ20 k1: dòng '1.' của công thức LDR mất trong transcription — file đếm được 5 khoản tại Đ20, bản gốc có 6",
+        "đã vá 1 dấu đóng ngoặc kép ” thiếu ở cuối quote k2 Đ24 (D-43, suffix unique '…giai đoạn 2016- 2020”.')",
+        "header căn cứ vỡ dòng 2 cột ('…ngày 16 tháng 6 năm' / '2010;') giữ nguyên — parser R-3 gộp"
+      ],
+      "counts": {
+        "dieu": 12,
+        "khoan": 55,
+        "diem": 57,
+        "tiet": 35,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "amend",
+          "source_path": "dieu:24/khoan:2",
+          "target_doc": "41/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung Điều 23 Thông tư 41/2016/TT-NHNN",
+          "valid_from": "2020-01-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:23",
+          "notes": "op nấp trong Điều Hiệu lực thi hành; CHÍNH op này bị k2 Đ1 TT26/2022 thay thế từ 2022-12-31 (amend-nhắm-op thật)"
+        },
+        {
+          "seq": 2,
+          "kind": "repeal",
+          "source_path": "dieu:24/khoan:3",
+          "target_doc": "36/2014/TT-NHNN",
+          "target_surface": "Thông tư số 36/2014/TT-NHNN",
+          "valid_from": "2020-01-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus; danh sách gạch đầu dòng"
+        },
+        {
+          "seq": 3,
+          "kind": "repeal",
+          "source_path": "dieu:24/khoan:3",
+          "target_doc": "06/2016/TT-NHNN",
+          "target_surface": "Thông tư số 06/2016/TT-NHNN",
+          "valid_from": "2020-01-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 4,
+          "kind": "repeal",
+          "source_path": "dieu:24/khoan:3",
+          "target_doc": "19/2017/TT-NHNN",
+          "target_surface": "Thông tư số 19/2017/TT-NHNN",
+          "valid_from": "2020-01-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 5,
+          "kind": "repeal",
+          "source_path": "dieu:24/khoan:3",
+          "target_doc": "16/2018/TT-NHNN",
+          "target_surface": "Thông tư số 16/2018/TT-NHNN",
+          "valid_from": "2020-01-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "out-of-corpus"
+        },
+        {
+          "seq": 6,
+          "kind": "repeal",
+          "source_path": "dieu:24/khoan:3",
+          "target_doc": "13/2019/TT-NHNN",
+          "target_surface": "Điều 4 Thông tư số 13/2019/TT-NHNN",
+          "valid_from": "2020-01-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:4",
+          "notes": "out-of-corpus; repeal MỘT điều của văn bản khác"
+        }
+      ],
+      "expected_transitions": [
+        {
+          "source_path": "dieu:21/khoan:1",
+          "surface": "Các hợp đồng được ký kết trước ngày Thông tư này có hiệu lực thi hành",
+          "scope_predicate": {
+            "contract_signed_before": "2020-01-01"
+          }
+        }
+      ],
+      "expected_norm_events": [
+        {
+          "norm": "gioi-han-ty-le-bao-dam-an-toan",
+          "event": "succession",
+          "from": "36/2014/TT-NHNN",
+          "to": "22/2019/TT-NHNN",
+          "at": "2020-01-01"
+        }
+      ],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "46/2010/QH12",
+          "surface": "Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "17/2017/QH14",
+          "surface": "Căn cứ Luật sửa đổi, bổ sung một số điều của Luật các tổ chức tín dụng"
+        },
+        {
+          "source_path": "dieu:20/khoan:4/diem:a",
+          "type": "ngoai_le",
+          "target": "SELF dieu:20/khoan:4/diem:a/tiet:i-ii",
+          "surface": "trừ các khoản sau đây"
+        },
+        {
+          "source_path": "dieu:21/khoan:1",
+          "type": "chuyen_tiep",
+          "target": "COHORT:contract_signed_before=2020-01-01",
+          "surface": "được tiếp tục thực hiện theo các thỏa thuận đã ký kết cho đến hết thời hạn của hợp đồng"
+        },
+        {
+          "source_path": "dieu:7/khoan:1/diem:b",
+          "type": "pinpoint",
+          "target": "SELF dieu:4/khoan:6",
+          "surface": "theo quy định tại điểm a, b khoản 6 Điều 4 Thông tư này"
+        },
+        {
+          "source_path": "dieu:23/khoan:3",
+          "type": "frontier",
+          "target": "1058/QĐ-TTg (ngoài kho)",
+          "surface": "Quyết định số 1058/QĐ-TTg"
+        }
+      ],
+      "amending_nodes": [
+        "dieu:24/khoan:2"
+      ]
+    },
+    {
+      "doc_key": "26/2022/TT-NHNN",
+      "slug": "tt-26-2022-tt-nhnn",
+      "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 22/2019/TT-NHNN",
+      "doc_type": "thong_tu",
+      "sha256": "fc85b05c50ce8242d441de76b96ec0d7d3a369e809673a15a6c65c59caa71d38",
+      "issued_date": "2022-12-31",
+      "issued_date_quote": "Hà Nội, ngày 31 tháng 12 năm 2022",
+      "effective_date": "2022-12-31",
+      "effective_date_quote": "Thông tư này có hiệu lực từ ngày 31 tháng 12 năm 2022./.",
+      "synthetic": false,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/thong-tu-26-2022-tt-nhnn-ngan-hang-nha-nuoc-viet-nam-241737-d1.html",
+      "transcription_notes": [
+        "hiệu lực NGAY ngày ban hành (trường hợp thật của same-day effectivity)",
+        "quote k2 Đ1 dùng '' (nháy kép đơn) thay “” — biến thể transcription, counter xử lý line-start/line-end"
+      ],
+      "counts": {
+        "dieu": 3,
+        "khoan": 2,
+        "diem": 0,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:1",
+          "target_doc": "22/2019/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung điểm a khoản 4 Điều 20",
+          "valid_from": "2022-12-31",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:20/khoan:4/diem:a",
+          "notes": "lộ trình tiền gửi KBNN theo NĂM ghi TRONG new_text (50%→60%→80%→100%); op này là ĐÍCH của repeal-op TT08/2026 fixture (OPO-01, PIT-01/02)"
+        },
+        {
+          "seq": 2,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:2",
+          "target_doc": "22/2019/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung khoản 2 Điều 24",
+          "valid_from": "2022-12-31",
+          "target_part": "body",
+          "target_is_op": true,
+          "target_path": "dieu:24/khoan:2",
+          "target_op": {
+            "doc": "22/2019/TT-NHNN",
+            "paths": [
+              "dieu:24/khoan:2"
+            ]
+          },
+          "notes": "AMEND-NHẮM-OP THẬT: đích là khoản sửa đổi (op amend Đ23 TT41 của TT22); new_text lồng quote sửa tiếp Đ23 TT41 (route QĐ 689/QĐ-TTg)"
+        }
+      ],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "46/2010/QH12",
+          "surface": "Căn cứ Luật Ngân hàng Nhà nước Việt Nam ngày 16 tháng 6 năm 2010"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "16/2017/NĐ-CP",
+          "surface": "Căn cứ Nghị định số 16/2017/NĐ-CP"
+        },
+        {
+          "source_path": "dieu:1/khoan:1",
+          "type": "pinpoint",
+          "target": "22/2019/TT-NHNN dieu:20/khoan:4/diem:a",
+          "surface": "điểm a khoản 4 Điều 20"
+        },
+        {
+          "source_path": "dieu:1/khoan:2",
+          "type": "pinpoint",
+          "target": "22/2019/TT-NHNN dieu:24/khoan:2",
+          "surface": "khoản 2 Điều 24"
+        },
+        {
+          "source_path": "dieu:2",
+          "type": "pinpoint",
+          "target": "SELF (thi hành)",
+          "surface": "Chánh Thanh tra, giám sát ngân hàng"
+        }
+      ],
+      "amending_nodes": [
+        "dieu:1/khoan:1",
+        "dieu:1/khoan:2"
+      ]
+    },
+    {
+      "doc_key": "52/2025/TT-NHNN",
+      "slug": "tt-52-2025-tt-nhnn",
+      "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 39/2016/TT-NHNN",
+      "doc_type": "thong_tu",
+      "sha256": "c65094527452a2befb3cbba16bd60d21ce2211746b28ba016cddf4229ac89869",
+      "issued_date": "2025-12-25",
+      "issued_date_quote": "Hà Nội, ngày 25 tháng 12 năm 2025",
+      "effective_date": "2025-12-25",
+      "effective_date_quote": "Thông tư này có hiệu lực thi hành từ ngày 25 tháng 12 năm 2025./.",
+      "synthetic": false,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/thong-tu-52-2025-tt-nhnn-sua-doi-quy-dinh-cho-vay-cua-to-chuc-tin-dung-422792-d1.html",
+      "transcription_notes": [
+        "văn bản PHÁT HIỆN THÊM khi kiểm tra VBHN 06/VBHN-NHNN 2026 (hợp nhất đến TT52) — bổ sung vào corpus để oracle diff không lệch"
+      ],
+      "counts": {
+        "dieu": 4,
+        "khoan": 0,
+        "diem": 0,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "amend",
+          "source_path": "dieu:1",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung khoản 3 Điều 22",
+          "valid_from": "2025-12-25",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:22/khoan:3",
+          "notes": "op trọn trong heading; new_text chứa '10 (mười) ngày làm việc' — bị QĐ 4033/QĐ-NHNN đính chính thành 'ngày'"
+        },
+        {
+          "seq": 2,
+          "kind": "amend",
+          "source_path": "dieu:2",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung khoản 2 Điều 35",
+          "valid_from": "2025-12-25",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:35/khoan:2"
+        }
+      ],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "46/2010/QH12",
+          "surface": "Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "32/2024/QH15",
+          "surface": "Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH15"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "26/2025/NĐ-CP",
+          "surface": "Căn cứ Nghị định số 26/2025/NĐ-CP"
+        },
+        {
+          "source_path": "dieu:1",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:22/khoan:3",
+          "surface": "khoản 3 Điều 22"
+        },
+        {
+          "source_path": "dieu:2",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:35/khoan:2",
+          "surface": "khoản 2 Điều 35"
+        }
+      ],
+      "amending_nodes": [
+        "dieu:1",
+        "dieu:2"
+      ]
+    },
+    {
+      "doc_key": "4033/QĐ-NHNN",
+      "slug": "qd-4033-2025-dinh-chinh",
+      "title": "Quyết định đính chính Thông tư số 52/2025/TT-NHNN",
+      "doc_type": "quyet_dinh",
+      "sha256": "2acab42d8be1443f3368e1374aa85d565f6ed77a61f5d1444e15db3ed6455cc9",
+      "issued_date": "2025-12-25",
+      "issued_date_quote": "Hà Nội, ngày 25 tháng 12 năm 2025",
+      "effective_date": "2025-12-25",
+      "effective_date_quote": "Quyết định này có hiệu lực kể từ ngày ký.",
+      "synthetic": false,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/quyet-dinh-4033-qd-nhnn-2025-dinh-chinh-thong-tu-52-2025-tt-nhnn-sua-doi-thong-tu-39-2016-tt-nhnn-422794-d1.html",
+      "transcription_notes": [
+        "OP DINH_CHINH THẬT (không phải fixture); typo transcription giữ nguyên: 'văn ban quy phạm', 'Thông tư sô 39'"
+      ],
+      "counts": {
+        "dieu": 3,
+        "khoan": 0,
+        "diem": 0,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "dinh_chinh",
+          "source_path": "dieu:1",
+          "target_doc": "52/2025/TT-NHNN",
+          "target_surface": "Đính chính cụm từ “ngày làm việc” thành “ngày”.",
+          "valid_from": "2025-12-25",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:1",
+          "retroactive_to_window_start": true,
+          "notes": "hồi tố về ĐẦU cửa sổ version bị đính chính (D-12): text k3 Đ22 TT39 bản-TT52 đọc là '10 (mười) ngày' từ 2025-12-25; VBHN 06/VBHN-NHNN xác nhận"
+        }
+      ],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "64/2025/QH15",
+          "surface": "Căn cứ Luật Ban hành văn ban quy phạm pháp luật số 64/2025/QH15"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "87/2025/QH15",
+          "surface": "Luật số 87/2025/QH15"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "78/2025/NĐ-CP",
+          "surface": "Căn cứ Nghị định số 78/2025/NĐ-CP"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "26/2025/NĐ-CP",
+          "surface": "Căn cứ Nghị định số 26/2025/NĐ-CP"
+        },
+        {
+          "source_path": "dieu:1",
+          "type": "pinpoint",
+          "target": "52/2025/TT-NHNN dieu:1",
+          "surface": "Điều 1 Thông tư số 52/2025/TT-NHNN"
+        }
+      ],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "21/VBHN-NHNN",
+      "slug": "vbhn-21-2024-tt39",
+      "title": "Văn bản hợp nhất TT39 (hợp nhất đến TT12/2024) — DIFFERENTIAL ORACLE",
+      "doc_type": "vbhn",
+      "sha256": "cc5ed1c67f13f7301139d2571265e7f7a9b9e77c1e8e3cb942de931999aad131",
+      "issued_date": "2024-07-16",
+      "issued_date_quote": "Hà Nội, ngày 16 tháng 7 năm 2024",
+      "effective_date": null,
+      "effective_date_quote": null,
+      "synthetic": false,
+      "is_oracle": true,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/van-ban-21-vbhn-nhnn-2024-hop-nhat-thong-tu-ve-hoat-dong-cho-vay-cua-to-chuc-tin-dung-chi-nhanh-ngan-hang-nuoc-ngoai-361117-d5.html",
+      "transcription_notes": [
+        "VBHN không có giá trị pháp lý (D-22) — is_oracle, không vào retrieval; hợp nhất TT39 + TT06 + TT10 + TT12",
+        "footnote dính vào số khoản ('12.6 Cho vay' / '1.21Căn cứ') đã tách space; nội dung footnote giữ nguyên"
+      ],
+      "counts": {
+        "dieu": 43,
+        "khoan": 122,
+        "diem": 88,
+        "tiet": 7,
+        "phuluc": 0
+      },
+      "expected_ops": [],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "06/VBHN-NHNN",
+      "slug": "vbhn-06-2026-tt39",
+      "title": "Văn bản hợp nhất TT39 (hợp nhất đến TT52/2025) — DIFFERENTIAL ORACLE",
+      "doc_type": "vbhn",
+      "sha256": "cada51832e71c012fd7b2f7029a024473233e07759cc11f12f86e1b8d5e72414",
+      "issued_date": "2026-01-07",
+      "issued_date_quote": "Hà Nội, ngày 07 tháng 01 năm 2026",
+      "effective_date": null,
+      "effective_date_quote": null,
+      "synthetic": false,
+      "is_oracle": true,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "luatvietnam",
+      "owner": null,
+      "source_url": "https://luatvietnam.vn/tai-chinh/van-ban-hop-nhat-06-vbhn-nhnn-2026-quy-dinh-hoat-dong-cho-vay-cua-to-chuc-tin-dung-425182-d5.html",
+      "transcription_notes": [
+        "hợp nhất TT39 + TT06 + TT10 + TT12 + TT52 (danh sách 4 văn bản sửa đổi ở đầu); k3 Đ22 đã phản ánh cả QĐ 4033 đính chính ('10 (mười) ngày' — không còn 'ngày làm việc')",
+        "footnote '5 [42] .' (số khoản tách khỏi dấu chấm) đã chuẩn hóa thành '5. [42]'",
+        "provenance ngoặc/footnote ([14][15][16] ngưng hiệu lực k8–10) dùng cho cross-validation 02 §5.5"
+      ],
+      "counts": {
+        "dieu": 43,
+        "khoan": 122,
+        "diem": 88,
+        "tiet": 7,
+        "phuluc": 0
+      },
+      "expected_ops": [],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "08/2026/TT-NHNN",
+      "slug": "tt-08-2026-tt-nhnn",
+      "title": "[FIXTURE] Thông tư sửa đổi TT22/2019 + bãi bỏ khoản sửa đổi của TT26/2022 (op-nhắm-op)",
+      "doc_type": "thong_tu",
+      "sha256": "aa3a6324b61db5f394acd95d3f54712ba9da180640fd6442ed16bf70b8c138f1",
+      "issued_date": "2026-01-01",
+      "issued_date_quote": "Hà Nội, ngày 01 tháng 01 năm 2026",
+      "effective_date": "2026-01-01",
+      "effective_date_quote": "Thông tư này có hiệu lực thi hành kể từ ngày 01 tháng 01 năm 2026.",
+      "synthetic": true,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "fixture",
+      "owner": null,
+      "source_url": null,
+      "transcription_notes": [],
+      "counts": {
+        "dieu": 4,
+        "khoan": 0,
+        "diem": 0,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "amend",
+          "source_path": "dieu:1",
+          "target_doc": "22/2019/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung điểm b khoản 4 Điều 20",
+          "valid_from": "2026-01-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:20/khoan:4/diem:b"
+        },
+        {
+          "seq": 2,
+          "kind": "repeal",
+          "source_path": "dieu:2",
+          "target_doc": "26/2022/TT-NHNN",
+          "target_surface": "Bãi bỏ khoản 1 Điều 1 Thông tư số 26/2022/TT-NHNN",
+          "valid_from": "2026-01-01",
+          "target_part": "body",
+          "target_is_op": true,
+          "target_op": {
+            "doc": "26/2022/TT-NHNN",
+            "paths": [
+              "dieu:1/khoan:1"
+            ]
+          },
+          "notes": "OP-NHẮM-OP: đóng hiệu lực op TT26-k1Đ1 (amend điểm a k4 Đ20 TT22) TỪ 2026-01-01; cửa sổ 2022-12-31→2026-01-01 BẤT KHẢ XÂM PHẠM (D-10); từ 2026-01-01 điểm a k4 Đ20 TT22 trở về text gốc 2019 (loại toàn bộ tiền gửi KBNN)"
+        }
+      ],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "46/2010/QH12",
+          "surface": "Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "32/2024/QH15",
+          "surface": "Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH15"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "26/2025/NĐ-CP",
+          "surface": "Căn cứ Nghị định số 26/2025/NĐ-CP"
+        },
+        {
+          "source_path": "dieu:1",
+          "type": "pinpoint",
+          "target": "22/2019/TT-NHNN dieu:20/khoan:4/diem:b",
+          "surface": "điểm b khoản 4 Điều 20"
+        },
+        {
+          "source_path": "dieu:2",
+          "type": "pinpoint",
+          "target": "26/2022/TT-NHNN dieu:1/khoan:1",
+          "surface": "khoản 1 Điều 1 Thông tư số 26/2022/TT-NHNN"
+        }
+      ],
+      "amending_nodes": [
+        "dieu:1"
+      ]
+    },
+    {
+      "doc_key": "28/2026/TT-NHNN",
+      "slug": "tt-28-2026-tt-nhnn",
+      "title": "[FIXTURE] Thông tư sửa đổi TT22/2019: chèn Điều 7a (alias drift) + thay-cụm-từ đa điều + bẫy binding 'Thông tư này'",
+      "doc_type": "thong_tu",
+      "sha256": "a3444b3dae07ee23f1b19f65c3e0f2929cbff54ffb4bde5683aeb2a5b0e787f4",
+      "issued_date": "2026-01-05",
+      "issued_date_quote": "Hà Nội, ngày 05 tháng 01 năm 2026",
+      "effective_date": "2026-01-25",
+      "effective_date_quote": "Thông tư này có hiệu lực thi hành kể từ ngày 25 tháng 01 năm 2026.",
+      "synthetic": true,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "fixture",
+      "owner": null,
+      "source_url": null,
+      "transcription_notes": [],
+      "counts": {
+        "dieu": 3,
+        "khoan": 2,
+        "diem": 0,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "insert",
+          "source_path": "dieu:1/khoan:1",
+          "target_doc": "22/2019/TT-NHNN",
+          "target_surface": "Bổ sung Điều 7a vào sau Điều 7",
+          "valid_from": "2026-01-25",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:7a",
+          "notes": "alias drift (INV-11); trong QUOTE có 'Điều 6 Thông tư này' và 'Điều 7 Thông tư này' → bind vào TT22 (ĐÍCH), không phải TT28 (02 §5.3); chứa số '10 (mười) ngày làm việc' — sẽ bị DC-01/2026 đính chính thành '05 (năm)'"
+        },
+        {
+          "seq": 2,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:2",
+          "target_doc": "22/2019/TT-NHNN",
+          "target_surface": "khoản 3 Điều 7",
+          "valid_from": "2026-01-25",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:7/khoan:3",
+          "via": "phrase_replace (D-21) — curator materialize",
+          "phrase": {
+            "from": "Ngân hàng Nhà nước chi nhánh tỉnh, thành phố trực thuộc Trung ương",
+            "to": "Ngân hàng Nhà nước chi nhánh Khu vực"
+          }
+        },
+        {
+          "seq": 3,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:2",
+          "target_doc": "22/2019/TT-NHNN",
+          "target_surface": "khoản 2 Điều 23",
+          "valid_from": "2026-01-25",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:23/khoan:2",
+          "via": "phrase_replace (D-21) — curator materialize",
+          "phrase": {
+            "from": "Ngân hàng Nhà nước chi nhánh tỉnh, thành phố trực thuộc Trung ương",
+            "to": "Ngân hàng Nhà nước chi nhánh Khu vực"
+          },
+          "notes": "cụm từ cũng xuất hiện ở Đ24-k2-quote và Đ25 TT22 nhưng op CHỈ liệt kê k3Đ7 + k2Đ23 — extractor không được tự mở rộng"
+        }
+      ],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "46/2010/QH12",
+          "surface": "Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "32/2024/QH15",
+          "surface": "Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH15"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "26/2025/NĐ-CP",
+          "surface": "Căn cứ Nghị định số 26/2025/NĐ-CP"
+        },
+        {
+          "source_path": "dieu:1/khoan:1",
+          "type": "pinpoint",
+          "target": "22/2019/TT-NHNN dieu:7",
+          "surface": "Bổ sung Điều 7a vào sau Điều 7"
+        },
+        {
+          "source_path": "dieu:1/khoan:2",
+          "type": "pinpoint",
+          "target": "22/2019/TT-NHNN dieu:23/khoan:2",
+          "surface": "khoản 2 Điều 23"
+        }
+      ],
+      "amending_nodes": [
+        "dieu:1/khoan:1",
+        "dieu:1/khoan:2"
+      ]
+    },
+    {
+      "doc_key": "32/2026/TT-NHNN",
+      "slug": "tt-32-2026-tt-nhnn",
+      "title": "[FIXTURE] Thông tư quy định về hoạt động đại lý thanh toán (norm succession + grandfathering 2 tầng + blanket derogation)",
+      "doc_type": "thong_tu",
+      "sha256": "9cca5850a834c9ab32fb94c13f42918c2ef6562d70f92b2434e48d6498a85333",
+      "issued_date": "2026-03-20",
+      "issued_date_quote": "Hà Nội, ngày 20 tháng 3 năm 2026",
+      "effective_date": "2026-07-01",
+      "effective_date_quote": "Thông tư này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2026.",
+      "synthetic": true,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "fixture",
+      "owner": null,
+      "source_url": null,
+      "transcription_notes": [
+        "header 'Số: 32 /2026/TT- NHNN' CỐ TÌNH chứa khoảng trắng lỗi (trap 02 §7.2) — vá trước khi tokenize"
+      ],
+      "counts": {
+        "dieu": 8,
+        "khoan": 18,
+        "diem": 5,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "repeal",
+          "source_path": "dieu:6/khoan:2",
+          "target_doc": "15/2020/TT-NHNN",
+          "target_surface": "Thông tư này thay thế Thông tư số 15/2020/TT-NHNN",
+          "valid_from": "2026-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "văn bản bị thay thế là fiction ngoài kho (giống QĐ1627 với TT39)"
+        },
+        {
+          "seq": 2,
+          "kind": "norm_decl",
+          "source_path": "dieu:6/khoan:2",
+          "target_doc": "32/2026/TT-NHNN",
+          "target_surface": "thay thế Thông tư số 15/2020/TT-NHNN ngày 22 tháng 10 năm 2020",
+          "valid_from": "2026-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "norm succession; Đ6 k3 tương chiếu dẫn chiếu cũ→mới NON-BINDING (D-08)"
+        },
+        {
+          "seq": 3,
+          "kind": "blanket_derogation",
+          "source_path": "dieu:6/khoan:4",
+          "target_doc": null,
+          "target_surface": "Các quy định trước đây trái với Thông tư này hết hiệu lực thi hành.",
+          "valid_from": "2026-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "KHÔNG mutate state; seed conflict screening theo chủ đề (D-14)"
+        }
+      ],
+      "expected_transitions": [
+        {
+          "source_path": "dieu:7",
+          "surface": "được ký kết trước ngày 01 tháng 7 năm 2026 và không được sửa đổi, bổ sung kể từ ngày 01 tháng 7 năm 2026",
+          "scope_predicate": {
+            "contract_signed_before": "2026-07-01",
+            "not_amended_on_or_after": "2026-07-01"
+          },
+          "notes": "GF-03: 2 predicate LỒNG đúng DSL D-25; test_scope_split"
+        }
+      ],
+      "expected_norm_events": [
+        {
+          "norm": "dai-ly-thanh-toan",
+          "event": "succession",
+          "from": "15/2020/TT-NHNN",
+          "to": "32/2026/TT-NHNN",
+          "at": "2026-07-01"
+        }
+      ],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "32/2024/QH15",
+          "surface": "Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH15"
+        },
+        {
+          "source_path": "dieu:3/khoan:2",
+          "type": "pinpoint",
+          "target": "32/2024/QH15 dieu:102",
+          "surface": "Điều 102 Luật Các tổ chức tín dụng số 32/2024/QH15"
+        },
+        {
+          "source_path": "dieu:3/khoan:2",
+          "type": "chu_de",
+          "target": "NORM:hoat-dong-cho-vay",
+          "surface": "quy định của Ngân hàng Nhà nước Việt Nam về hoạt động cho vay của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài đối với khách hàng"
+        },
+        {
+          "source_path": "dieu:5/khoan:2",
+          "type": "pinpoint",
+          "target": "SELF dieu:4",
+          "surface": "phạm vi ủy quyền quy định tại Điều 4 Thông tư này"
+        },
+        {
+          "source_path": "dieu:6/khoan:3",
+          "type": "chu_de",
+          "target": "CORRELATION non-binding → 15/2020/TT-NHNN",
+          "surface": "Các dẫn chiếu đến Thông tư số 15/2020/TT-NHNN"
+        },
+        {
+          "source_path": "dieu:7/khoan:1",
+          "type": "chuyen_tiep",
+          "target": "COHORT:signed_before=2026-07-01 ∧ not_amended",
+          "surface": "hợp đồng đại lý thanh toán được ký kết trước ngày 01 tháng 7 năm 2026"
+        }
+      ],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "11/2026/TT-NHNN",
+      "slug": "tt-11-2026-tt-nhnn",
+      "title": "[FIXTURE] Thông tư omnibus sửa 5 Thông tư chia theo Chương (context-stack, hiệu lực phân kỳ, op heading, op Phụ lục, mass repeal)",
+      "doc_type": "thong_tu",
+      "sha256": "4206ce43708b4fc775876dd112d2760abc9bd71821f52e08852ec420fb5b6742",
+      "issued_date": "2026-01-12",
+      "issued_date_quote": "Hà Nội, ngày 12 tháng 01 năm 2026",
+      "effective_date": "2026-03-01",
+      "effective_date_quote": "Thông tư này có hiệu lực thi hành từ ngày 01 tháng 3 năm 2026, trừ quy định tại khoản 2 Điều này.",
+      "synthetic": true,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "fixture",
+      "owner": null,
+      "source_url": null,
+      "transcription_notes": [
+        "hiệu lực PHÂN KỲ THEO CHỦ ĐỀ: 'Các quy định về Phiếu lý lịch tư pháp tại Thông tư này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2026.' (k2 Đ7) — phân loại ngữ nghĩa, không regex nổi (per-op review D-19)"
+      ],
+      "counts": {
+        "dieu": 8,
+        "khoan": 9,
+        "diem": 0,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "insert",
+          "source_path": "dieu:1/khoan:1",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Bổ sung điểm c vào khoản 1 Điều 9",
+          "valid_from": "2026-07-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:9/khoan:1/diem:c",
+          "notes": "'Điều 9' TRẦN — resolve bằng context-stack Chương I (02 §5.4); valid_from 2026-07-01 theo k2 Đ7 (Phiếu LLTP) ≠ ngày chung 2026-03-01 (PEN-01)"
+        },
+        {
+          "seq": 2,
+          "kind": "amend",
+          "source_path": "dieu:1/khoan:2",
+          "target_doc": "39/2016/TT-NHNN",
+          "target_surface": "Sửa đổi tên Điều 14",
+          "valid_from": "2026-03-01",
+          "target_part": "heading",
+          "target_is_op": false,
+          "target_path": "dieu:14",
+          "notes": "op CHỈ sửa TIÊU ĐỀ (trap 02 §7.11)"
+        },
+        {
+          "seq": 3,
+          "kind": "amend",
+          "source_path": "dieu:2/khoan:1",
+          "target_doc": "22/2019/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung khoản 5 Điều 20",
+          "valid_from": "2026-03-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:20/khoan:5",
+          "notes": "trong QUOTE có 'Điều 9 Thông tư này' = Đ9 TT22 (binding vào ĐÍCH) — node NGOÀI trích đoạn corpus → mandatory edge unresolved (CLO-02)"
+        },
+        {
+          "seq": 4,
+          "kind": "insert",
+          "source_path": "dieu:3/khoan:1",
+          "target_doc": "41/2016/TT-NHNN",
+          "target_surface": "Bổ sung khoản 3 vào Phụ lục 3",
+          "valid_from": "2026-03-01",
+          "target_part": "appendix",
+          "target_is_op": false,
+          "target_path": "phuluc:3",
+          "notes": "op nhắm PHỤ LỤC (trap 02 §7.11)"
+        },
+        {
+          "seq": 5,
+          "kind": "amend",
+          "source_path": "dieu:4",
+          "target_doc": "26/2022/TT-NHNN",
+          "target_surface": "Sửa đổi, bổ sung Điều 2",
+          "valid_from": "2026-03-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:2",
+          "notes": "đích là điều KHÔNG-amending của một thông tư sửa đổi (đối chứng với op-nhắm-op)"
+        },
+        {
+          "seq": 6,
+          "kind": "amend",
+          "source_path": "dieu:5",
+          "target_doc": "12/2024/TT-NHNN",
+          "target_surface": "Điều 3 Thông tư số 12/2024/TT-NHNN",
+          "valid_from": "2026-03-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:3",
+          "via": "phrase_replace (D-21) — curator materialize",
+          "phrase": {
+            "from": "Giám đốc Ngân hàng Nhà nước chi nhánh các tỉnh, thành phố trực thuộc Trung ương",
+            "to": "Giám đốc Ngân hàng Nhà nước chi nhánh Khu vực"
+          }
+        },
+        {
+          "seq": 7,
+          "kind": "repeal",
+          "source_path": "dieu:6/khoan:1",
+          "target_doc": "97/2019/TT-NHNN",
+          "target_surface": "Thông tư số 97/2019/TT-NHNN",
+          "valid_from": "2026-03-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "mass repeal; fiction ngoài kho"
+        },
+        {
+          "seq": 8,
+          "kind": "repeal",
+          "source_path": "dieu:6/khoan:2",
+          "target_doc": "98/2020/TT-NHNN",
+          "target_surface": "Thông tư số 98/2020/TT-NHNN",
+          "valid_from": "2026-03-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "notes": "fiction ngoài kho"
+        },
+        {
+          "seq": 9,
+          "kind": "repeal",
+          "source_path": "dieu:6/khoan:3",
+          "target_doc": "99/2021/TT-NHNN",
+          "target_surface": "Khoản 3 Điều 3 Thông tư số 99/2021/TT-NHNN",
+          "valid_from": "2026-03-01",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:3/khoan:3",
+          "notes": "repeal MỘT khoản của văn bản ngoài kho"
+        }
+      ],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "32/2024/QH15",
+          "surface": "Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH15"
+        },
+        {
+          "source_path": "dieu:1/khoan:1",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:9/khoan:1 (context-stack)",
+          "surface": "Bổ sung điểm c vào khoản 1 Điều 9"
+        },
+        {
+          "source_path": "dieu:2/khoan:1",
+          "type": "pinpoint",
+          "target": "22/2019/TT-NHNN dieu:20/khoan:5",
+          "surface": "khoản 5 Điều 20"
+        },
+        {
+          "source_path": "dieu:3/khoan:1",
+          "type": "pinpoint",
+          "target": "41/2016/TT-NHNN phuluc:3",
+          "surface": "Phụ lục 3 ban hành kèm theo Thông tư số 41/2016/TT-NHNN"
+        },
+        {
+          "source_path": "dieu:7/khoan:2",
+          "type": "pinpoint",
+          "target": "SELF dieu:1/khoan:1 (ngữ nghĩa)",
+          "surface": "Các quy định về Phiếu lý lịch tư pháp tại Thông tư này"
+        }
+      ],
+      "amending_nodes": [
+        "dieu:1/khoan:1",
+        "dieu:1/khoan:2",
+        "dieu:2/khoan:1",
+        "dieu:3/khoan:1",
+        "dieu:4",
+        "dieu:5"
+      ]
+    },
+    {
+      "doc_key": "DC-01/2026",
+      "slug": "dc-01-2026",
+      "title": "[FIXTURE] Công văn đính chính một con số của TT28/2026 — hồi tố về đầu cửa sổ",
+      "doc_type": "cong_van",
+      "sha256": "c5c19bbe670ee058d24f0c95837ca9dc45aa7ea160de01feda798898f43fe7ad",
+      "issued_date": "2026-02-10",
+      "issued_date_quote": "Hà Nội, ngày 10 tháng 02 năm 2026",
+      "effective_date": "2026-02-10",
+      "effective_date_quote": "Hà Nội, ngày 10 tháng 02 năm 2026",
+      "synthetic": true,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "public",
+      "channel": "fixture",
+      "owner": null,
+      "source_url": null,
+      "transcription_notes": [
+        "công văn — KHÔNG có Điều (counts 0/0/0/0/0); effective = ngày ký, nhưng op hồi tố"
+      ],
+      "counts": {
+        "dieu": 0,
+        "khoan": 0,
+        "diem": 0,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [
+        {
+          "seq": 1,
+          "kind": "dinh_chinh",
+          "source_path": "body",
+          "target_doc": "22/2019/TT-NHNN",
+          "target_surface": "đã in là: “trong thời hạn 10 (mười) ngày làm việc đầu tiên của quý tiếp theo”",
+          "valid_from": "2026-01-25",
+          "target_part": "body",
+          "target_is_op": false,
+          "target_path": "dieu:7a/khoan:1",
+          "retroactive_to_window_start": true,
+          "notes": "DCH-01: sửa '10 (mười)' → '05 (năm)' HỒI TỐ về đầu cửa sổ Đ7a (2026-01-25 = ngày TT28 hiệu lực), KHÔNG phải từ 2026-02-10; as_of 2026-02-01 với K≥ingest phải trả 05"
+        }
+      ],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "body",
+          "type": "pinpoint",
+          "target": "28/2026/TT-NHNN dieu:1/khoan:1",
+          "surface": "khoản 1 Điều 1 Thông tư số 28/2026/TT-NHNN"
+        },
+        {
+          "source_path": "body",
+          "type": "pinpoint",
+          "target": "22/2019/TT-NHNN dieu:7a/khoan:1",
+          "surface": "khoản 1 Điều 7a Thông tư số 22/2019/TT-NHNN"
+        },
+        {
+          "source_path": "body",
+          "type": "pinpoint",
+          "target": "22/2019/TT-NHNN",
+          "surface": "Thông tư số 22/2019/TT-NHNN ngày 15 tháng 11 năm 2019"
+        },
+        {
+          "source_path": "body",
+          "type": "pinpoint",
+          "target": "28/2026/TT-NHNN",
+          "surface": "Thông tư số 28/2026/TT-NHNN ngày 05 tháng 01 năm 2026"
+        },
+        {
+          "source_path": "body",
+          "type": "chu_de",
+          "target": "NORM:gioi-han-ty-le-bao-dam-an-toan",
+          "surface": "quy định các giới hạn, tỷ lệ bảo đảm an toàn trong hoạt động của ngân hàng, chi nhánh ngân hàng nước ngoài"
+        }
+      ],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "QT-TD-01/SHB",
+      "slug": "shb-qt-td-01",
+      "title": "[FIXTURE nội bộ] Quy trình cho vay khách hàng cá nhân — có MỘT mục cố tình stale (SEM-01)",
+      "doc_type": "quy_trinh_noi_bo",
+      "sha256": "72a3c73e054ccec9a4e6d2c1ca9737b93e6242652bee4e96b60280eabe8d7781",
+      "issued_date": "2023-03-20",
+      "issued_date_quote": "Hà Nội, ngày 20 tháng 3 năm 2023",
+      "effective_date": "2023-04-01",
+      "effective_date_quote": "Quy trình này có hiệu lực kể từ ngày 01 tháng 4 năm 2023.",
+      "synthetic": true,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "internal",
+      "channel": "internal_registry",
+      "owner": "Khối Khách hàng cá nhân — Phòng Chính sách tín dụng",
+      "source_url": null,
+      "transcription_notes": [
+        "STALE CỐ TÌNH tại khoản 2 Điều 3 ('Mục 3.2' theo cách gọi 04 §1.2): liệt kê '05 (năm) điều kiện vay vốn' và dẫn 'khoản 5 Điều 7 Thông tư số 39/2016/TT-NHNN' — khoản 5 Đ7 bị TT06 Đ2 BÃI BỎ từ 2023-09-01 và k3 Đ7 được TT12 nới cho khoản giá trị nhỏ; sau 2023-09-01 mục này lệch chuẩn (SEM-01, blast-radius → notice owner)",
+        "ban hành TRƯỚC TT06 → stale tự nhiên theo dòng thời gian, không lộ liễu"
+      ],
+      "counts": {
+        "dieu": 7,
+        "khoan": 13,
+        "diem": 5,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "39/2016/TT-NHNN",
+          "surface": "Căn cứ Thông tư số 39/2016/TT-NHNN"
+        },
+        {
+          "source_path": "preamble",
+          "type": "chu_de",
+          "target": "NORM:hoat-dong-cho-vay",
+          "surface": "Căn cứ các quy định của Ngân hàng Nhà nước Việt Nam về hoạt động cho vay của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài đối với khách hàng"
+        },
+        {
+          "source_path": "dieu:2/khoan:1",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:9",
+          "surface": "Điều 9 Thông tư số 39/2016/TT-NHNN"
+        },
+        {
+          "source_path": "dieu:3/khoan:1",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:7",
+          "surface": "Điều 7 Thông tư số 39/2016/TT-NHNN"
+        },
+        {
+          "source_path": "dieu:3/khoan:2/diem:đ",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:7/khoan:5 (STALE — node đã bị bãi bỏ)",
+          "surface": "khoản 5 Điều 7 Thông tư số 39/2016/TT-NHNN"
+        },
+        {
+          "source_path": "dieu:4/khoan:1",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:13",
+          "surface": "Điều 13 Thông tư số 39/2016/TT-NHNN"
+        },
+        {
+          "source_path": "dieu:4/khoan:2",
+          "type": "pinpoint",
+          "target": "CS-LS-01/SHB",
+          "surface": "Chính sách lãi suất cho vay số CS-LS-01/SHB"
+        },
+        {
+          "source_path": "dieu:5/khoan:1",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:23/khoan:1 + MB-HD-01/SHB",
+          "surface": "khoản 1 Điều 23 Thông tư số 39/2016/TT-NHNN"
+        },
+        {
+          "source_path": "dieu:5/khoan:2",
+          "type": "chu_de",
+          "target": "NORM:giai-ngan-von-cho-vay (TT21/2017 ngoài kho)",
+          "surface": "quy định của Ngân hàng Nhà nước Việt Nam về phương thức giải ngân vốn cho vay"
+        }
+      ],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "MB-HD-01/SHB",
+      "slug": "shb-mb-hd-01",
+      "title": "[FIXTURE nội bộ] Mẫu hợp đồng cho vay phục vụ nhu cầu đời sống (biểu mẫu — staleness propagation)",
+      "doc_type": "bieu_mau",
+      "sha256": "0a9daf3af66df489ad2d2b099de632e8adb177b462e0389fab114f2a460726e1",
+      "issued_date": "2024-07-05",
+      "issued_date_quote": "Hà Nội, ngày 05 tháng 7 năm 2024",
+      "effective_date": "2024-07-05",
+      "effective_date_quote": "áp dụng thống nhất trong toàn hệ thống kể từ ngày 05 tháng 7 năm 2024",
+      "synthetic": true,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "internal",
+      "channel": "internal_registry",
+      "owner": "Khối Khách hàng cá nhân — Phòng Phát triển sản phẩm",
+      "source_url": null,
+      "transcription_notes": [],
+      "counts": {
+        "dieu": 5,
+        "khoan": 12,
+        "diem": 0,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [],
+      "expected_transitions": [
+        {
+          "source_path": "dieu:4/khoan:2",
+          "surface": "các hợp đồng cho vay đã ký kết trước ngày Mẫu hợp đồng này được áp dụng",
+          "scope_predicate": {
+            "contract_signed_before": "2024-07-05"
+          },
+          "notes": "kèm mốc TT06: 'nội dung sửa đổi, bổ sung hợp đồng kể từ ngày Thông tư số 06/2023/TT-NHNN có hiệu lực thi hành phải phù hợp với quy định hiện hành'"
+        }
+      ],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "91/2015/QH13",
+          "surface": "Căn cứ Bộ luật Dân sự số 91/2015/QH13"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "32/2024/QH15",
+          "surface": "Căn cứ Luật Các tổ chức tín dụng số 32/2024/QH15"
+        },
+        {
+          "source_path": "dieu:2/khoan:1",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:13 + 32/2024/QH15 dieu:100",
+          "surface": "Điều 13 Thông tư số 39/2016/TT-NHNN và Điều 100 Luật Các tổ chức tín dụng số 32/2024/QH15"
+        },
+        {
+          "source_path": "dieu:2/khoan:2",
+          "type": "chu_de",
+          "target": "NORM:phuong-phap-tinh-lai (TT14/2017 ngoài kho)",
+          "surface": "quy định của Ngân hàng Nhà nước Việt Nam về phương pháp tính lãi"
+        },
+        {
+          "source_path": "dieu:4/khoan:2",
+          "type": "chuyen_tiep",
+          "target": "COHORT:contract_signed_before=2024-07-05 + mốc TT06",
+          "surface": "kể từ ngày Thông tư số 06/2023/TT-NHNN có hiệu lực thi hành"
+        }
+      ],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "CS-LS-01/SHB",
+      "slug": "shb-cs-ls-01",
+      "title": "[FIXTURE nội bộ] Chính sách lãi suất cho vay — 1 khoản siết nghĩa vụ CỦA SHB (CFL-04) + 1 khoản siết yêu cầu VỚI khách (CFL-03)",
+      "doc_type": "chinh_sach_noi_bo",
+      "sha256": "f75addc804cf229d73a006288a50c308d5c4a3d28fed27c67ff2042cbff7ad9a",
+      "issued_date": "2024-10-01",
+      "issued_date_quote": "Hà Nội, ngày 01 tháng 10 năm 2024",
+      "effective_date": "2024-10-15",
+      "effective_date_quote": "Chính sách này có hiệu lực kể từ ngày 15 tháng 10 năm 2024.",
+      "synthetic": true,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "internal",
+      "channel": "internal_registry",
+      "owner": "Khối Nguồn vốn",
+      "source_url": null,
+      "transcription_notes": [
+        "CFL-04 (Liskov-exempt, chat_hon_ve_minh — TỰ LOẠI): khoản 2 Điều 3 — SHB tự buộc cung cấp bảng tính lãi TRƯỚC ≥03 ngày làm việc (siết nghĩa vụ CỦA SHB so với Đ16 TT39) → KHÔNG được thành conflict",
+        "CFL-03 (chat_hon_ve_doi_tac — CANDIDATE): khoản 1 Điều 4 — buộc MỌI khách hàng (kể cả khoản giá trị nhỏ) nộp phương án sử dụng vốn khả thi, TRÁI với miễn trừ tại k3 Đ7 TT39 (bản-sau-TT12: 'Điều kiện này không bắt buộc đối với khoản cho vay có mức giá trị nhỏ') → vào queue, fork internal_external"
+      ],
+      "counts": {
+        "dieu": 5,
+        "khoan": 6,
+        "diem": 0,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "39/2016/TT-NHNN",
+          "surface": "Căn cứ Thông tư số 39/2016/TT-NHNN"
+        },
+        {
+          "source_path": "dieu:2/khoan:1",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:13",
+          "surface": "Điều 13 Thông tư số 39/2016/TT-NHNN"
+        },
+        {
+          "source_path": "dieu:2/khoan:2",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:13/khoan:2",
+          "surface": "khoản 2 Điều 13 Thông tư số 39/2016/TT-NHNN"
+        },
+        {
+          "source_path": "dieu:2/khoan:2",
+          "type": "chu_de",
+          "target": "NORM:tran-lai-suat-nganh-uu-tien",
+          "surface": "mức lãi suất cho vay tối đa do Thống đốc Ngân hàng Nhà nước Việt Nam quyết định trong từng thời kỳ"
+        },
+        {
+          "source_path": "dieu:4/khoan:1",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:7/khoan:3 (CFL-03)",
+          "surface": "khoản cho vay có mức giá trị nhỏ"
+        }
+      ],
+      "amending_nodes": []
+    },
+    {
+      "doc_key": "GT-468-01/SHB",
+      "slug": "shb-gt-468-01",
+      "title": "[FIXTURE nội bộ] Diễn giải nội bộ về áp dụng trần lãi suất Đ468 BLDS — statement hạng thấp nhất",
+      "doc_type": "dien_giai_noi_bo",
+      "sha256": "f6d09a03dfc8fa844f175a5069c68d9f8c07ef33d01a917641592cad48beed12",
+      "issued_date": "2019-06-10",
+      "issued_date_quote": "Hà Nội, ngày 10 tháng 6 năm 2019",
+      "effective_date": "2019-06-10",
+      "effective_date_quote": "Hà Nội, ngày 10 tháng 6 năm 2019",
+      "synthetic": true,
+      "is_oracle": false,
+      "excerpt": false,
+      "excerpt_spec": null,
+      "audience": "internal",
+      "channel": "internal_registry",
+      "owner": "Khối Pháp chế và Tuân thủ",
+      "source_url": null,
+      "transcription_notes": [
+        "statement diễn giải (02 §6.3): được cite, hạng thấp nhất, KHÔNG phải quy phạm — Đ3 tự tuyên bố điều đó"
+      ],
+      "counts": {
+        "dieu": 3,
+        "khoan": 6,
+        "diem": 0,
+        "tiet": 0,
+        "phuluc": 0
+      },
+      "expected_ops": [],
+      "expected_transitions": [],
+      "expected_norm_events": [],
+      "expected_edges_sample": [
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "91/2015/QH13",
+          "surface": "Căn cứ Bộ luật Dân sự số 91/2015/QH13"
+        },
+        {
+          "source_path": "preamble",
+          "type": "tham_quyen",
+          "target": "01/2019/NQ-HĐTP",
+          "surface": "Căn cứ Nghị quyết số 01/2019/NQ-HĐTP"
+        },
+        {
+          "source_path": "dieu:1/khoan:1",
+          "type": "pinpoint",
+          "target": "91/2015/QH13 dieu:468/khoan:1",
+          "surface": "Khoản 1 Điều 468 Bộ luật Dân sự số 91/2015/QH13"
+        },
+        {
+          "source_path": "dieu:1/khoan:2",
+          "type": "pinpoint",
+          "target": "47/2010/QH12 dieu:91",
+          "surface": "Điều 91 Luật Các tổ chức tín dụng số 47/2010/QH12"
+        },
+        {
+          "source_path": "dieu:2/khoan:1",
+          "type": "pinpoint",
+          "target": "01/2019/NQ-HĐTP dieu:7/khoan:2",
+          "surface": "khoản 2 Điều 7 Nghị quyết số 01/2019/NQ-HĐTP"
+        },
+        {
+          "source_path": "dieu:2/khoan:2",
+          "type": "pinpoint",
+          "target": "39/2016/TT-NHNN dieu:13",
+          "surface": "Điều 13 Thông tư số 39/2016/TT-NHNN"
+        }
+      ],
+      "amending_nodes": []
+    }
+  ]
+}
