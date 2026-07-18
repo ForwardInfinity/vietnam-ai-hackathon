@@ -9,9 +9,15 @@
 		reverse_proxy api:8000
 	}
 
-	# /admin* -> placeholder (F6 sẽ thay bằng admin console Streamlit)
+	# /admin* -> admin console Streamlit (F6) — basic-auth lớp ngoài (defense-in-depth,
+	# API /admin/* vẫn đòi X-Role curator). User: curator / pass: shb-curator-2026
+	# (đổi pass = `caddy hash-password` rồi thay hash dưới đây — ghi chú trong report F6).
 	handle /admin* {
-		respond "LawState admin console — đang xây dựng (F6). Quay lại sau." 200
+		basic_auth {
+			curator "$2a$14$EwFSTpagtF97z4QsWxGz4eAHpfxSY7/xkNUZEEitdtc6durgGT0UC"
+		}
+		# không strip prefix: admin app chạy --server.baseUrlPath /admin
+		reverse_proxy admin:8502
 	}
 
 	# còn lại -> chat UI

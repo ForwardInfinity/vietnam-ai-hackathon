@@ -1,13 +1,18 @@
-"""LawState API — FastAPI /v1 (docs/03 S6).
+"""LawState API — FastAPI /v1 đủ bảng S6 (docs/03).
 
-F1: /health + /v1/ask stub trung thực (Tier D khi chưa có snapshot — hệ không bịa
-khi không có căn cứ). Các endpoint còn lại thuộc F3-F6.
+F1 nền: /health + /v1/ask JSON. F6: SSE cho /ask (content negotiation — additive),
+timeline/graph/norms/artifacts, nhóm /admin/* (ingest, ops queue, decision, batches,
+replay, backlog, conflicts, demand, notifications), /eval/run, /feedback.
+
+Auth hackathon: header X-Role (employee|customer|curator; thiếu → customer);
+/admin/* đòi curator; mutation đòi X-Actor (INV-6). Audience lọc qua api.gate
+MỘT CỬA (INV-12) — không endpoint nào tự viết filter.
+Logic F3/F4/F5/F7 gọi qua api.integrations — chưa merge thì stub/501 trung thực.
 """
 from __future__ import annotations
 
 import os
 from contextlib import asynccontextmanager
-from datetime import date
 
 import psycopg
 from dotenv import load_dotenv
@@ -15,7 +20,7 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 
 from answer.llm_gateway import check_family_guard
-from api.schemas import Answer, AskRequest
+from api.routes import admin_misc, admin_ops, ask, misc, nodes
 
 load_dotenv()
 
@@ -34,8 +39,21 @@ app = FastAPI(
     lifespan=lifespan,
     title="LawState API",
     description="Máy tính hiệu lực pháp quy ba trục thời gian + tầng trả lời có kiểm chứng (SHB).",
-    version="0.1.0",
+    version="0.2.0",
 )
+
+@app.exception_handler(psycopg.OperationalError)
+async def db_unreachable(request, exc):  # endpoint cần DB nhưng DB chưa sẵn — 503 trung thực, không traceback
+    return JSONResponse(
+        {"detail": "Database unreachable — thử lại sau (xem /health)."}, status_code=503
+    )
+
+
+app.include_router(ask.router, prefix="/v1")
+app.include_router(nodes.router, prefix="/v1")
+app.include_router(admin_ops.router, prefix="/v1")
+app.include_router(admin_misc.router, prefix="/v1")
+app.include_router(misc.router, prefix="/v1")
 
 
 def _db_ok() -> bool:
@@ -52,28 +70,3 @@ def health() -> JSONResponse:
     db = _db_ok()
     body = {"status": "ok" if db else "degraded", "db": "ok" if db else "unreachable"}
     return JSONResponse(body, status_code=200 if db else 503)
-
-
-@app.post("/v1/ask", response_model=Answer)
-def ask(req: AskRequest) -> Answer:
-    """Stub trung thực F1: corpus chưa nạp, chưa có run snapshot nào — mọi câu hỏi
-    trả Tier D kèm lý do, coverage attestation rỗng (chưa quét kênh nào). Không có
-    code path nào render văn tổng hợp khi không có căn cứ đã compile (INV-7/INV-8)."""
-    return Answer(
-        tier="D",
-        audience=req.audience,
-        as_of=req.as_of or date.today(),
-        as_known=req.as_known,
-        run_id=None,
-        answer=[],
-        bases=[],
-        conflicts=[],
-        upcoming_changes=[],
-        banners=[],
-        coverage=[],
-        refusal_reason=(
-            "Corpus chưa nạp: chưa có trạng thái hiệu lực nào được compile "
-            "(run_id=null), nên không có căn cứ để trả lời. Hệ từ chối thay vì bịa; "
-            "câu hỏi được route tới chuyên gia pháp chế."
-        ),
-    )
