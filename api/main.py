@@ -6,6 +6,7 @@ khi không có căn cứ). Các endpoint còn lại thuộc F3-F6.
 from __future__ import annotations
 
 import os
+from contextlib import asynccontextmanager
 from datetime import date
 
 import psycopg
@@ -13,6 +14,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 
+from answer.llm_gateway import check_family_guard
 from api.schemas import Answer, AskRequest
 
 load_dotenv()
@@ -21,7 +23,15 @@ DATABASE_URL = os.getenv(
     "DATABASE_URL", "postgresql://lawstate:lawstate@localhost:5432/lawstate"
 )
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # D-30/D-41: judge khác họ extract/compose — vi phạm thì không cho server boot
+    check_family_guard()
+    yield
+
+
 app = FastAPI(
+    lifespan=lifespan,
     title="LawState API",
     description="Máy tính hiệu lực pháp quy ba trục thời gian + tầng trả lời có kiểm chứng (SHB).",
     version="0.1.0",

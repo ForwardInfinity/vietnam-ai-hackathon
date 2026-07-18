@@ -2,7 +2,7 @@
 .PHONY: smoke test up
 
 smoke:
-	uv run python -c "import api.main, api.schemas"
+	uv run python -c "import api.main, api.schemas, answer.llm_gateway"
 	uv run pytest -q -m "not heavy"
 
 test:

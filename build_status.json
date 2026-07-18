@@ -1,8 +1,8 @@
 {
   "updated_at": "2025-07-18",
   "components": [
-    {"name": "F1 — Nền tảng: skeleton, DDL + trigger, API stub, UI shell, CI/CD lên VPS", "status": "in_progress", "note": "Giai đoạn A: deploy walking skeleton"},
-    {"name": "F1 — Contracts: schemas 1:1 DDL, LLM gateway, CONTRACTS.md", "status": "pending", "note": "Giai đoạn B"},
+    {"name": "F1 — Nền tảng: skeleton, DDL + trigger, API stub, UI shell, CI/CD lên VPS", "status": "done", "note": "URL sống: https://152-42-242-127.sslip.io — mọi commit master tự deploy"},
+    {"name": "F1 — Contracts: schemas 1:1 DDL, LLM gateway, CONTRACTS.md", "status": "done", "note": "Xem CONTRACTS.md trước khi code; make smoke là gate merge"},
     {"name": "F2 — Corpus: văn bản gốc + manifest đếm tay + fixtures", "status": "pending", "note": ""},
     {"name": "F3 — Ingest: parser cây, citation→edge, op extraction", "status": "pending", "note": ""},
     {"name": "F4 — Engine: fold, windows, scope, snapshot, conflict", "status": "pending", "note": ""},
