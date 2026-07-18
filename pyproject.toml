@@ -13,6 +13,9 @@ dependencies = [
     "python-dotenv>=1.0",
     "jsonschema>=4.22",
     "pyvis>=0.3.2",
+    "rank-bm25>=0.2.2",
+    "pyvi>=0.1.1",
+    "numpy>=1.26",
 ]
 
 [dependency-groups]
@@ -21,6 +24,10 @@ dev = [
     "playwright>=1.61.0",
     "pytest>=8.0",
     "respx>=0.21",
+]
+# BGE-M3 thật (D-40) — chỉ cài khi cần: `uv sync --group ml`; local dev dùng fake embedder
+ml = [
+    "sentence-transformers>=3.0",
 ]
 
 [tool.uv]

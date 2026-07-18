@@ -1,0 +1,6 @@
+{
+  "kappa": null,
+  "n": 0,
+  "threshold": 0.8,
+  "note": "chưa hiệu chuẩn — mặc định cap Tier B + banner (R-33); chạy `uv run python -m answer.judge_calibrate` để đo"
+}
