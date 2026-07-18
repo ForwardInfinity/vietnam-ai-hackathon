@@ -200,3 +200,15 @@ def test_ask_with_run_logs_answer_and_demand_grows(seeded_client):
 
     demand = seeded_client.get("/v1/admin/demand", headers=CUR).json()
     assert any(i["question"] == q for i in demand["items"])
+
+
+def test_demo_seed_idempotent_and_curator_gated(seeded_client):
+    r = seeded_client.post("/v1/admin/demo/seed", json={"confirm": True}, headers=NO_ACTOR)
+    assert r.status_code == 422  # thiếu người thao tác
+    r = seeded_client.post("/v1/admin/demo/seed", json={}, headers=CUR)
+    assert r.status_code == 422  # thiếu confirm
+    before = seeded_client.get("/v1/admin/backlog", headers=CUR).json()["counts"]
+    r = seeded_client.post("/v1/admin/demo/seed", json={"confirm": True}, headers=CUR)
+    assert r.status_code == 200 and r.json()["synthetic"] is True
+    after = seeded_client.get("/v1/admin/backlog", headers=CUR).json()["counts"]
+    assert after == before  # idempotent trên DB đã seed

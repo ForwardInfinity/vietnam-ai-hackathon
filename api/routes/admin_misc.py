@@ -91,6 +91,33 @@ def ingest(
 
 
 # ---------------------------------------------------------------------------
+# Demo seed (bootstrap khi F3 chưa merge) — fixture synthetic, idempotent
+# ---------------------------------------------------------------------------
+
+@router.post("/demo/seed")
+def demo_seed(body: dict | None = None, actor: str = Depends(require_actor)):
+    """Nạp mini-corpus TT39/TT06/TT10 synthetic (tất cả artifact synthetic=true,
+    UUID cố định, ON CONFLICT DO NOTHING — không đụng dữ liệu thật).
+
+    Mục đích: QA thao tác ratify/replay/timeline trên production TRƯỚC khi F3 ingest
+    thật merge. Gỡ endpoint này khi corpus thật vào (ghi trong report F6).
+    """
+    if not (body or {}).get("confirm"):
+        raise HTTPException(422, "body {\"confirm\": true} để xác nhận nạp fixture demo")
+    from tests.api.seed_demo import seed  # fixture sở hữu bởi F6 (tests/api)
+
+    with db.tx() as conn:
+        seed(conn)
+        counts = {
+            t: conn.execute(f"SELECT count(*) AS c FROM {t}").fetchone()["c"]  # noqa: S608 — tên bảng cố định
+            for t in ("artifact", "node", "op", "node_version", "conflict",
+                      "pending_event", "notification", "coverage")
+        }
+    return {"seeded": True, "by": actor, "synthetic": True, "counts": counts,
+            "note": "Fixture demo F6 — thay bằng ingest thật khi F3 merge."}
+
+
+# ---------------------------------------------------------------------------
 # Replay (F4) — FR-11
 # ---------------------------------------------------------------------------
 

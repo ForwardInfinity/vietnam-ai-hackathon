@@ -411,6 +411,15 @@ elif section == "🔔 Notifications":
 # ===========================================================================
 elif section == "📥 Ingest văn bản":
     st.header("📥 Ingest văn bản mới (R-3 bước 1 → pipeline F3)")
+    with st.expander("🧪 Nạp demo fixture (synthetic — khi corpus trống, chờ F3)"):
+        st.caption("Mini-corpus TT39/TT06/TT10 + QT nội bộ, UUID cố định, idempotent. "
+                   "Dùng để diễn ratify→replay→timeline trên production trước khi F3 merge.")
+        if st.button("Nạp fixture demo", disabled=not actor):
+            resp = api.post("/v1/admin/demo/seed", ROLE, actor, json_body={"confirm": True})
+            if resp.status_code == 200:
+                st.success(resp.json()["counts"])
+            else:
+                _err(resp)
     st.caption("File vào log L0 bất biến (sha256, tem trục K) → parse cây → citation → ĐỀ XUẤT op. "
                "Không gì tự vào effective state — mọi op chờ phê chuẩn ở queue.")
     with st.form("ingest"):
