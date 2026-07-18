@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-07-18",
+  "updated_at": "2026-07-18",
   "components": [
     {"name": "F1 — Nền tảng: skeleton, DDL + trigger, API stub, UI shell, CI/CD lên VPS", "status": "done", "note": "URL sống: https://152-42-242-127.sslip.io — mọi commit master tự deploy"},
     {"name": "F1 — Contracts: schemas 1:1 DDL, LLM gateway, CONTRACTS.md", "status": "done", "note": "Xem CONTRACTS.md trước khi code; make smoke là gate merge"},
