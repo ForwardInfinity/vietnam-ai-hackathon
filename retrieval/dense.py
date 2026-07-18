@@ -81,6 +81,25 @@ def get_embedder(name: str | None = None) -> Embedder:
     return FakeDeterministicEmbedder()
 
 
+def on_snapshot_written(conn, run_id) -> int:
+    """Hook R-19 cho engine F4 (`engine.snapshot.replay(on_snapshot_written=...)`).
+
+    Chạy TRONG transaction replay của F4 (nơi duy nhất được UPDATE node_version —
+    guard `lawstate.replay`): tính embedding cho các version retrievable của run
+    và ghi vào cột vector(1024) qua một cửa query_builder. BM25 KHÔNG cần persist —
+    rebuild in-process từ snapshot <1s mỗi query (D-39). Trả số hàng đã ghi."""
+    from retrieval.query_builder import embedding_backlog, write_embedding
+
+    rows = embedding_backlog(conn, run_id)
+    if not rows:
+        return 0
+    embedder = get_embedder()
+    vecs = embedder.encode([r[2] for r in rows])
+    for (node_id, version, _), v in zip(rows, vecs):
+        write_embedding(conn, node_id, version, v)
+    return len(rows)
+
+
 class DenseIndex:
     """Cosine search in-memory trên entries (key, text). Row nào snapshot đã có
     embedding thì truyền qua `precomputed` để khỏi encode lại."""

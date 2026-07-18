@@ -24,6 +24,14 @@ ans: Answer = answer_question(question, ctx, store=store)
 ```
 
 - `store=None` hoặc chưa có `replay_run` → Tier D trung thực (giống stub F1).
+- **Seam F6 đã nối sẵn**: `answer/pipeline.py` expose
+  `answer_question(req: AskRequest, entitlements=...) -> Answer` đúng chữ ký
+  `api.integrations.run_answer_pipeline` tìm — `/v1/ask` (JSON + SSE) tự dùng
+  pipeline thật khi có DB, fallback Tier D honest khi DB unreachable.
+- **Hook R-19 cho F4**: `retrieval.dense.on_snapshot_written(conn, run_id)` —
+  truyền vào `engine.snapshot.replay(on_snapshot_written=...)` để persist
+  embedding vào `node_version.embedding` ngay trong transaction replay;
+  BM25 không cần persist (rebuild in-process <1s — D-39).
 - `composer=` inject được (mặc định: GatewayComposer nếu có key, OfflineComposer
   nếu không / `LLM_OFFLINE=1`). OfflineComposer = trích dẫn verbatim tất định.
 - `return_trace=True` → `(Answer, Trace)` — bằng chứng từng stage cho adversarial test.

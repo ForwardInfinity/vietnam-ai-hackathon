@@ -30,12 +30,13 @@ from typing import Any, Iterable, Protocol
 ENTITLEMENTS: dict[str, tuple[str, ...]] = {
     "customer": ("public",),
     "employee": ("public", "internal"),
+    # role vận hành substrate (admin console F6) — thấy cả restricted
+    "curator": ("public", "internal", "restricted"),
 }
 
 
 def entitlements_for(audience: str) -> tuple[str, ...]:
-    """Persona → tập audience_t được đọc. Không có persona nào thấy 'restricted'
-    trong hackathon (hook cho role đặc quyền sau)."""
+    """Persona/role → tập audience_t được đọc. Role lạ → ValueError (không đoán quyền)."""
     try:
         return ENTITLEMENTS[audience]
     except KeyError:
@@ -366,6 +367,29 @@ SELECT o.id::text, o.kind::text, a.doc_key, o.valid_from
 FROM op o JOIN artifact a ON a.id = o.source_artifact
 WHERE o.id::text = ANY(%(op_ids)s)
 """
+
+# R-19 (hook on_snapshot_written — dùng bởi retrieval.dense trong transaction replay F4)
+EMBEDDING_BACKLOG_SQL = """
+SELECT nv.node_id::text, nv.version, coalesce(nv.heading,'') || E'\n' || coalesce(nv.body,'')
+FROM node_version nv
+WHERE nv.run_id = %(run_id)s AND nv.retrievable AND nv.embedding IS NULL
+"""
+
+EMBEDDING_WRITE_SQL = """
+UPDATE node_version SET embedding = %(vec)s::vector
+WHERE node_id = %(node_id)s AND version = %(version)s
+"""
+
+
+def embedding_backlog(conn, run_id) -> list[tuple[str, int, str]]:
+    return list(conn.execute(EMBEDDING_BACKLOG_SQL, {"run_id": run_id}).fetchall())
+
+
+def write_embedding(conn, node_id: str, version: int, vec: list[float]) -> None:
+    """CHỈ gọi trong transaction replay của F4 (guard lawstate.replay — R-1)."""
+    literal = "[" + ",".join(f"{x:.6f}" for x in vec) + "]"
+    conn.execute(EMBEDDING_WRITE_SQL, {"vec": literal, "node_id": node_id, "version": version})
+
 
 LATEST_RUN_SQL = """
 SELECT run_id::text, k_cutoff FROM replay_run

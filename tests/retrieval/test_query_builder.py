@@ -21,11 +21,12 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 def test_entitlements_mapping():
     assert qb.entitlements_for("customer") == ("public",)
     assert qb.entitlements_for("employee") == ("public", "internal")
+    assert qb.entitlements_for("curator") == ("public", "internal", "restricted")
     with pytest.raises(ValueError):
         qb.entitlements_for("admin")
 
 
-def test_no_persona_sees_restricted():
+def test_no_chat_persona_sees_restricted():
     for persona in ("customer", "employee"):
         assert "restricted" not in qb.entitlements_for(persona)
 

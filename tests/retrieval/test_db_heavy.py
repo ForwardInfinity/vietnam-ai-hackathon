@@ -171,6 +171,29 @@ def test_open_conflicts_sql(store):
     assert c.open_at(AS_OF) is False                   # sau NQ01
 
 
+# ---------------------------------------------------------------- hook R-19
+
+def test_on_snapshot_written_hook_persists_embeddings(conn):
+    """Hook F5 cho engine.snapshot.replay: giả lập envelope replay của F4
+    (SET LOCAL lawstate.replay) rồi gọi hook — embedding được ghi cho mọi version
+    retrievable của run."""
+    from retrieval.dense import on_snapshot_written
+    with conn.transaction():
+        conn.execute("SET LOCAL lawstate.replay = 'on'")
+        n = on_snapshot_written(conn, ds.RUN_ID)
+    assert n > 0
+    missing = conn.execute(
+        """SELECT count(*) FROM node_version
+           WHERE run_id = %s AND retrievable AND embedding IS NULL""",
+        (ds.RUN_ID,)).fetchone()[0]
+    assert missing == 0
+    # node không retrievable (amending) KHÔNG bị đụng — không vào index nào
+    amn = conn.execute(
+        "SELECT embedding IS NULL FROM node_version WHERE node_id = %s",
+        (ds.N_TT06_D1,)).fetchone()[0]
+    assert amn is True
+
+
 # ---------------------------------------------------------------- e2e + INV-10
 
 def test_e2e_offline_composer_on_postgres(store):
