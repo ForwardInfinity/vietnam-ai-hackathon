@@ -42,9 +42,9 @@
 
 | Văn bản | Vị trí | Bẫy | §7 | Golden |
 |---|---|---|---|---|
-| 08/2026/TT-NHNN | Đ2 = "Bãi bỏ khoản 1 Điều 1 Thông tư số 26/2022/TT-NHNN." | **repeal-nhắm-op** hiệu lực 01/01/2026: đóng op TT26 TỪ ĐÓ TRỞ ĐI; cửa sổ 31/12/2022→01/01/2026 nguyên vẹn — viết-lại-lịch-sử = FAIL; từ 01/01/2026 điểm a k4 Đ20 TT22 hồi về text gốc 2019 | 6 | **OPO-01, PIT-01, PIT-02** (history_integrity, test_window_inviolability) |
+| 08/2026/TT-NHNN | Đ2: "Bãi bỏ khoản 1 Điều 1 Thông tư số 26/2022/TT-NHNN; điểm a khoản 4 Điều 20 Thông tư số 22/2019/TT-NHNN tiếp tục thực hiện theo quy định tại Thông tư số 22/2019/TT-NHNN." | **repeal-nhắm-op** hiệu lực 01/01/2026: đóng op TT26 TỪ ĐÓ TRỞ ĐI; cửa sổ 31/12/2022→01/01/2026 nguyên vẹn — viết-lại-lịch-sử = FAIL; từ 01/01/2026 điểm a k4 Đ20 TT22 hồi về text gốc 2019, revert có CĂN CỨ VĂN BẢN tường minh (vế sau cùng câu là TUYÊN BỐ/dẫn chiếu — KHÔNG sinh op riêng, chỉ sinh edge pinpoint) | 6 | **OPO-01, PIT-01, PIT-02** (history_integrity, test_window_inviolability) |
 | 08/2026/TT-NHNN | Đ1: sửa điểm b k4 Đ20 TT22 | amend điểm thường — đối chứng cùng-điều-khác-điểm với op-nhắm-op | — | PIT-02 phụ |
-| 08/2026/TT-NHNN | Đ4: hiệu lực CÙNG NGÀY ban hành 01/01/2026 | same-day (mirror TT26 thật); ngày 01/01 chọn khớp mốc lộ trình TT26 | 4 | — |
+| 08/2026/TT-NHNN | Đ4: hiệu lực CÙNG NGÀY ban hành 01/01/2026 + câu "ban hành theo trình tự, thủ tục rút gọn" | same-day hợp lệ qua trình tự rút gọn (Đ151 Luật BHVBQPPL; mirror TT26 thật); ngày 01/01 khớp mốc lộ trình TT26; TT28/2026 Đ3 cũng có câu rút gọn (cách ban hành 20 ngày < 45) | 4 | — |
 | 28/2026/TT-NHNN | k1 Đ1: "Bổ sung Điều 7a vào sau Điều 7" TT22 | alias drift Điều 7a (INV-11, test_alias_drift) | — (D-07) | timeline alias |
 | 28/2026/TT-NHNN | TRONG quote Đ7a: "…quy định tại Điều 6 **Thông tư này**" / "Điều 7 Thông tư này" | binding "Thông tư này" TRONG quote → TT22 (ĐÍCH), không phải TT28; NGOÀI quote (Đ3 TT28) → TT28 | 8 | exit test extraction |
 | 28/2026/TT-NHNN | k2 Đ1: thay cụm từ "NHNN chi nhánh tỉnh, thành phố trực thuộc Trung ương" → "NHNN chi nhánh Khu vực" TẠI k3 Đ7 và k2 Đ23 | phrase-replace đa điều → curator materialize 2 op (D-21); cụm CŨNG xuất hiện ở Đ24-k2-quote và Đ25 TT22 — KHÔNG được tự lan | — (D-21) | exit test extraction |

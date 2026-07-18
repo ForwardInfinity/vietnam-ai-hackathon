@@ -23,6 +23,7 @@ META = {
         "op_kinds": "amend|insert|repeal|suspend|close_window|dinh_chinh|norm_decl|blanket_derogation (02 §3); suspend ≠ repeal; repeal có thể target op (target_is_op)",
         "expected_transitions": "điều khoản chuyển tiếp trích thành DSL D-25 — tách khỏi expected_ops vì transition không mutate node, nó sinh scope-split",
         "valid_from": "ngày op có hiệu lực, đọc từ chính văn bản; dinh_chinh hồi tố về ĐẦU cửa sổ của version bị đính chính (D-12)",
+        "dinh_chinh_retroactive": "QUY ƯỚC CHO F4 (fold engine): op dinh_chinh có valid_from = ĐẦU CỬA SỔ của version bị đính chính, KHÔNG phải ngày văn bản đính chính (D-12/§4.5). Ca chuẩn: DC-01/2026 ban hành 2026-02-10 nhưng valid_from=2026-01-25 (= ngày Điều 7a TT22 do k1 Điều 1 TT28 chèn có hiệu lực); as_of trong [2026-01-25, 2026-02-10) với K >= ingest(DC-01) phải đọc text ĐÃ đính chính ('05 (năm)'). Tương tự QĐ 4033/QĐ-NHNN -> 2025-12-25 (đầu cửa sổ TT52).",
         "amending_nodes": "node chứa động-từ-hiệu-lực + TEXT QUOTE (role amending, D-05, loại khỏi retrieval); điều repeal thuần không quote không nằm ở đây",
         "edges": "kiểu theo 02 §5.2: tham_quyen|dinh_nghia|ngoai_le|chuyen_tiep|chu_de|frontier|pinpoint (pinpoint = trích dẫn đích danh không thuộc 5 loại mandatory)",
     },
@@ -508,7 +509,7 @@ DOCS.append(doc(
         op(1, "amend", "dieu:1", "22/2019/TT-NHNN", "Sửa đổi, bổ sung điểm b khoản 4 Điều 20", "2026-01-01", target_path="dieu:20/khoan:4/diem:b"),
         op(2, "repeal", "dieu:2", "26/2022/TT-NHNN", "Bãi bỏ khoản 1 Điều 1 Thông tư số 26/2022/TT-NHNN", "2026-01-01",
            target_is_op=True, target_op={"doc": "26/2022/TT-NHNN", "paths": ["dieu:1/khoan:1"]},
-           notes="OP-NHẮM-OP: đóng hiệu lực op TT26-k1Đ1 (amend điểm a k4 Đ20 TT22) TỪ 2026-01-01; cửa sổ 2022-12-31→2026-01-01 BẤT KHẢ XÂM PHẠM (D-10); từ 2026-01-01 điểm a k4 Đ20 TT22 trở về text gốc 2019 (loại toàn bộ tiền gửi KBNN)"),
+           notes="OP-NHẮM-OP: đóng hiệu lực op TT26-k1Đ1 (amend điểm a k4 Đ20 TT22) TỪ 2026-01-01; cửa sổ 2022-12-31→2026-01-01 BẤT KHẢ XÂM PHẠM (D-10); từ 2026-01-01 điểm a k4 Đ20 TT22 trở về text gốc 2019 (loại toàn bộ tiền gửi KBNN) — revert có CĂN CỨ VĂN BẢN tường minh: câu '…tiếp tục thực hiện theo quy định tại Thông tư số 22/2019/TT-NHNN' cùng Điều 2 (câu tuyên bố/dẫn chiếu, KHÔNG sinh op riêng)"),
     ],
     expected_edges_sample=[
         edge("preamble", "tham_quyen", "46/2010/QH12", "Căn cứ Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12"),
@@ -516,6 +517,7 @@ DOCS.append(doc(
         edge("preamble", "tham_quyen", "26/2025/NĐ-CP", "Căn cứ Nghị định số 26/2025/NĐ-CP"),
         edge("dieu:1", "pinpoint", "22/2019/TT-NHNN dieu:20/khoan:4/diem:b", "điểm b khoản 4 Điều 20"),
         edge("dieu:2", "pinpoint", "26/2022/TT-NHNN dieu:1/khoan:1", "khoản 1 Điều 1 Thông tư số 26/2022/TT-NHNN"),
+        edge("dieu:2", "pinpoint", "22/2019/TT-NHNN dieu:20/khoan:4/diem:a", "điểm a khoản 4 Điều 20 Thông tư số 22/2019/TT-NHNN tiếp tục thực hiện theo quy định tại Thông tư số 22/2019/TT-NHNN"),
     ],
     amending_nodes=["dieu:1"],
 ))
