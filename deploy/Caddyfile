@@ -16,6 +16,10 @@
 		basic_auth {
 			curator "$2a$14$EwFSTpagtF97z4QsWxGz4eAHpfxSY7/xkNUZEEitdtc6durgGT0UC"
 		}
+		# redirect /admin → /admin/ tại Caddy: streamlit tự redirect sẽ phát Location http://
+		# (không biết đang sau TLS) làm rớt phiên basic-auth trên vài client
+		@admin_noslash path /admin
+		redir @admin_noslash /admin/ 308
 		# không strip prefix: admin app chạy --server.baseUrlPath /admin
 		reverse_proxy admin:8502
 	}

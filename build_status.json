@@ -7,7 +7,7 @@
     {"name": "F3 — Ingest: parser cây, citation→edge, op extraction", "status": "pending", "note": ""},
     {"name": "F4 — Engine: fold, windows, scope, snapshot, conflict", "status": "done", "note": "fold pure + snapshot/sweep/oracle/blast/invariants; substrate QA 04 §5 xanh; QA script: python -m engine.story (4/4)"},
     {"name": "F5 — Retrieval + Answering: hybrid, closure, compiler, verifier 2 tầng", "status": "pending", "note": ""},
-    {"name": "F6 — Bề mặt: API /v1 đủ bảng S6 + admin console + chat SSE + timeline/graph", "status": "done", "note": "/admin sống (basic-auth curator/shb-curator-2026); ratify per-op+batch+spot-check chạy thật; replay/eval 501 chờ F4/F7; /ask Tier D trung thực chờ F5"},
+    {"name": "F6 — Bề mặt: API /v1 đủ bảng S6 + admin console + chat SSE + timeline/graph", "status": "done", "note": "/admin sống (basic-auth curator/shb-curator-2026); ratify per-op+batch+spot-check chạy thật; replay+blast-radius NỐI ENGINE F4 thật; eval 501 chờ F7; /ask Tier D trung thực chờ F5"},
     {"name": "F7 — Eval: golden set đối kháng + baseline naive RAG", "status": "pending", "note": ""}
   ]
 }

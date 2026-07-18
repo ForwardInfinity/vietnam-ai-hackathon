@@ -77,7 +77,7 @@ services:
     # config hash không đổi (depends_on không tính vào hash) — label đổi ⇒ recreate
     # ⇒ mount lại file mới + nạp config mới. (F6 ghi chú — bài học deploy /admin)
     labels:
-      lawstate.caddyfile-rev: "f6-admin-basicauth-v1"
+      lawstate.caddyfile-rev: "f6-admin-basicauth-v2"
     ports:
       - "80:80"
       - "443:443"
