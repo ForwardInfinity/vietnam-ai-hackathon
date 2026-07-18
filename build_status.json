@@ -5,7 +5,7 @@
     {"name": "F1 — Contracts: schemas 1:1 DDL, LLM gateway, CONTRACTS.md", "status": "done", "note": "Xem CONTRACTS.md trước khi code; make smoke là gate merge"},
     {"name": "F2 — Corpus: văn bản gốc + manifest đếm tay + fixtures", "status": "pending", "note": ""},
     {"name": "F3 — Ingest: parser cây, citation→edge, op extraction", "status": "pending", "note": ""},
-    {"name": "F4 — Engine: fold, windows, scope, snapshot, conflict", "status": "pending", "note": ""},
+    {"name": "F4 — Engine: fold, windows, scope, snapshot, conflict", "status": "done", "note": "fold pure + snapshot/sweep/oracle/blast/invariants; substrate QA 04 §5 xanh; QA script: python -m engine.story (4/4)"},
     {"name": "F5 — Retrieval + Answering: hybrid, closure, compiler, verifier 2 tầng", "status": "pending", "note": ""},
     {"name": "F6 — Admin UI: ratify queue, batch, backlog, conflict kanban", "status": "pending", "note": ""},
     {"name": "F7 — Eval: golden set đối kháng + baseline naive RAG", "status": "pending", "note": ""}

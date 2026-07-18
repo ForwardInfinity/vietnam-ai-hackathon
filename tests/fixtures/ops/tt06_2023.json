@@ -1,0 +1,103 @@
+{
+  "artifact": {
+    "id": "art:06/2023/TT-NHNN",
+    "doc_key": "06/2023/TT-NHNN",
+    "doc_type": "thong_tu",
+    "issuer": "NHNN",
+    "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 39/2016/TT-NHNN quy định về hoạt động cho vay",
+    "issued_date": "2023-06-28",
+    "effective_date": "2023-09-01",
+    "audience": "public",
+    "ingested_at": "2023-07-01T00:00:00+00:00",
+    "synthetic": false
+  },
+  "nodes": [
+    {
+      "id": "node:06/2023:dieu:1/khoan:2",
+      "path": "dieu:1/khoan:2",
+      "role": "amending",
+      "body": "2. Bổ sung khoản 8, khoản 9 và khoản 10 vào Điều 8 như sau: \"8. Để gửi tiền. 9. Để thanh toán tiền góp vốn, mua, nhận chuyển nhượng phần vốn góp của công ty trách nhiệm hữu hạn, công ty hợp danh. 10. Để bù đắp tài chính, trừ trường hợp khoản vay đáp ứng đầy đủ các điều kiện quy định.\""
+    },
+    {
+      "id": "node:06/2023:dieu:6",
+      "path": "dieu:6",
+      "role": "transition",
+      "heading": "Quy định chuyển tiếp",
+      "body": "Các thỏa thuận cho vay, hợp đồng tín dụng được ký kết trước ngày Thông tư này có hiệu lực thi hành, tổ chức tín dụng và khách hàng được tiếp tục thực hiện theo nội dung đã ký kết phù hợp với quy định của pháp luật tại thời điểm ký kết; các nội dung sửa đổi, bổ sung kể từ ngày Thông tư này có hiệu lực thực hiện theo quy định tại Thông tư này."
+    },
+    {
+      "id": "node:39/2016:dieu:8/khoan:8",
+      "artifact": "art:39/2016/TT-NHNN",
+      "path": "dieu:8/khoan:8",
+      "role": "rule"
+    },
+    {
+      "id": "node:39/2016:dieu:8/khoan:9",
+      "artifact": "art:39/2016/TT-NHNN",
+      "path": "dieu:8/khoan:9",
+      "role": "rule"
+    },
+    {
+      "id": "node:39/2016:dieu:8/khoan:10",
+      "artifact": "art:39/2016/TT-NHNN",
+      "path": "dieu:8/khoan:10",
+      "role": "rule"
+    }
+  ],
+  "ops": [
+    {
+      "id": "op:tt06-insert-k8",
+      "kind": "insert",
+      "seq": 1,
+      "source_node": "node:06/2023:dieu:1/khoan:2",
+      "target_node": "node:39/2016:dieu:8/khoan:8",
+      "new_text": "Để gửi tiền.",
+      "valid_from": "2023-09-01",
+      "source_quote": "Bổ sung khoản 8, khoản 9 và khoản 10 vào Điều 8 như sau: \"8. Để gửi tiền.\""
+    },
+    {
+      "id": "op:tt06-insert-k9",
+      "kind": "insert",
+      "seq": 2,
+      "source_node": "node:06/2023:dieu:1/khoan:2",
+      "target_node": "node:39/2016:dieu:8/khoan:9",
+      "new_text": "Để thanh toán tiền góp vốn, mua, nhận chuyển nhượng phần vốn góp của công ty trách nhiệm hữu hạn, công ty hợp danh.",
+      "valid_from": "2023-09-01",
+      "source_quote": "Bổ sung khoản 8, khoản 9 và khoản 10 vào Điều 8 như sau: \"… 9. Để thanh toán tiền góp vốn, mua, nhận chuyển nhượng phần vốn góp của công ty trách nhiệm hữu hạn, công ty hợp danh.\""
+    },
+    {
+      "id": "op:tt06-insert-k10",
+      "kind": "insert",
+      "seq": 3,
+      "source_node": "node:06/2023:dieu:1/khoan:2",
+      "target_node": "node:39/2016:dieu:8/khoan:10",
+      "new_text": "Để bù đắp tài chính, trừ trường hợp khoản vay đáp ứng đầy đủ các điều kiện quy định.",
+      "valid_from": "2023-09-01",
+      "source_quote": "Bổ sung khoản 8, khoản 9 và khoản 10 vào Điều 8 như sau: \"… 10. Để bù đắp tài chính, trừ trường hợp khoản vay đáp ứng đầy đủ các điều kiện quy định.\""
+    },
+    {
+      "id": "op:tt06-amend-d7",
+      "kind": "amend",
+      "seq": 4,
+      "target_node": "node:39/2016:dieu:7",
+      "new_text": "Tổ chức tín dụng xem xét, quyết định cho vay khi khách hàng có đủ các điều kiện sau đây: 1. Khách hàng là pháp nhân có năng lực pháp luật dân sự theo quy định của pháp luật; khách hàng là cá nhân từ đủ 18 tuổi trở lên có năng lực hành vi dân sự đầy đủ. 2. Nhu cầu vay vốn để sử dụng vào mục đích hợp pháp. 3. Có phương án sử dụng vốn khả thi. 4. Có khả năng tài chính để trả nợ. 5. Trường hợp cho vay bằng phương tiện điện tử, khách hàng đáp ứng quy định về nhận biết, xác minh thông tin nhận biết khách hàng. (bản TT06/2023)",
+      "valid_from": "2023-09-01",
+      "source_quote": "Sửa đổi, bổ sung Điều 7 như sau: \"Điều 7. Điều kiện vay vốn …\""
+    },
+    {
+      "id": "op:tt06-normdecl-cvdt",
+      "kind": "norm_decl",
+      "seq": 5,
+      "target_norm": "norm:cho-vay-dien-tu",
+      "valid_from": "2023-09-01",
+      "source_quote": "Bổ sung Mục 3 Hoạt động cho vay bằng phương tiện điện tử (Điều 32a đến Điều 32đ) — khai sinh norm cho-vay-điện-tử."
+    },
+    {
+      "id": "op:tt06-blanket",
+      "kind": "blanket_derogation",
+      "seq": 6,
+      "valid_from": "2023-09-01",
+      "source_quote": "Các quy định trước đây trái với Thông tư này hết hiệu lực thi hành."
+    }
+  ]
+}

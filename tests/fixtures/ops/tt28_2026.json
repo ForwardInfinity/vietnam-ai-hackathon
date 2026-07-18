@@ -1,0 +1,42 @@
+{
+  "artifact": {
+    "id": "art:28/2026/TT-NHNN",
+    "doc_key": "28/2026/TT-NHNN",
+    "doc_type": "thong_tu",
+    "issuer": "NHNN",
+    "title": "Thông tư bổ sung quy định về thẩm định cho vay bằng phương tiện điện tử (fixture synthetic)",
+    "issued_date": "2025-11-20",
+    "effective_date": "2026-01-15",
+    "audience": "public",
+    "ingested_at": "2025-11-25T00:00:00+00:00",
+    "synthetic": true
+  },
+  "nodes": [
+    {
+      "id": "node:28/2026:dieu:1",
+      "path": "dieu:1",
+      "role": "amending",
+      "body": "Bổ sung Điều 7a vào sau Điều 7 Thông tư số 39/2016/TT-NHNN như sau: \"Điều 7a. Thẩm định và quyết định cho vay bằng phương tiện điện tử. Thời hạn thẩm định và quyết định cho vay là 07 ngày làm việc kể từ ngày nhận đủ hồ sơ.\"",
+      "artifact": "art:28/2026/TT-NHNN"
+    },
+    {
+      "id": "node:39/2016:dieu:7a",
+      "artifact": "art:39/2016/TT-NHNN",
+      "path": "dieu:7a",
+      "role": "rule"
+    }
+  ],
+  "ops": [
+    {
+      "id": "op:tt28-insert-d7a",
+      "kind": "insert",
+      "seq": 1,
+      "source_node": "node:28/2026:dieu:1",
+      "target_node": "node:39/2016:dieu:7a",
+      "new_heading": "Thẩm định và quyết định cho vay bằng phương tiện điện tử",
+      "new_text": "Thời hạn thẩm định và quyết định cho vay là 07 ngày làm việc kể từ ngày nhận đủ hồ sơ.",
+      "valid_from": "2026-01-15",
+      "source_quote": "Bổ sung Điều 7a vào sau Điều 7 Thông tư số 39/2016/TT-NHNN như sau: \"Điều 7a. …\""
+    }
+  ]
+}

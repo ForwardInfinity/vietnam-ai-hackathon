@@ -1,0 +1,54 @@
+{
+  "artifact": {
+    "id": "art:10/2023/TT-NHNN",
+    "doc_key": "10/2023/TT-NHNN",
+    "doc_type": "thong_tu",
+    "issuer": "NHNN",
+    "title": "Thông tư ngưng hiệu lực thi hành một số nội dung của Thông tư số 39/2016/TT-NHNN (đã được bổ sung theo Thông tư số 06/2023/TT-NHNN)",
+    "issued_date": "2023-08-23",
+    "effective_date": "2023-09-01",
+    "audience": "public",
+    "ingested_at": "2023-08-25T00:00:00+00:00",
+    "synthetic": false
+  },
+  "nodes": [
+    {
+      "id": "node:10/2023:dieu:1",
+      "path": "dieu:1",
+      "role": "amending",
+      "body": "Ngưng hiệu lực thi hành khoản 8, khoản 9 và khoản 10 Điều 8 của Thông tư số 39/2016/TT-NHNN (đã được bổ sung theo khoản 2 Điều 1 Thông tư số 06/2023/TT-NHNN) từ ngày 01 tháng 9 năm 2023 cho đến ngày có hiệu lực thi hành của văn bản quy phạm pháp luật mới quy định về các vấn đề này."
+    }
+  ],
+  "ops": [
+    {
+      "id": "op:tt10-suspend-k8",
+      "kind": "suspend",
+      "seq": 1,
+      "source_node": "node:10/2023:dieu:1",
+      "target_node": "node:39/2016:dieu:8/khoan:8",
+      "valid_from": "2023-09-01",
+      "valid_to_event": "cho đến ngày có hiệu lực thi hành của văn bản quy phạm pháp luật mới quy định về các vấn đề này",
+      "source_quote": "Ngưng hiệu lực thi hành khoản 8, khoản 9 và khoản 10 Điều 8 của Thông tư số 39/2016/TT-NHNN (đã được bổ sung theo khoản 2 Điều 1 Thông tư số 06/2023/TT-NHNN) từ ngày 01 tháng 9 năm 2023 cho đến ngày có hiệu lực thi hành của văn bản quy phạm pháp luật mới quy định về các vấn đề này."
+    },
+    {
+      "id": "op:tt10-suspend-k9",
+      "kind": "suspend",
+      "seq": 2,
+      "source_node": "node:10/2023:dieu:1",
+      "target_node": "node:39/2016:dieu:8/khoan:9",
+      "valid_from": "2023-09-01",
+      "valid_to_event": "cho đến ngày có hiệu lực thi hành của văn bản quy phạm pháp luật mới quy định về các vấn đề này",
+      "source_quote": "Ngưng hiệu lực thi hành khoản 8, khoản 9 và khoản 10 Điều 8 … cho đến ngày có hiệu lực thi hành của văn bản quy phạm pháp luật mới quy định về các vấn đề này."
+    },
+    {
+      "id": "op:tt10-suspend-k10",
+      "kind": "suspend",
+      "seq": 3,
+      "source_node": "node:10/2023:dieu:1",
+      "target_node": "node:39/2016:dieu:8/khoan:10",
+      "valid_from": "2023-09-01",
+      "valid_to_event": "cho đến ngày có hiệu lực thi hành của văn bản quy phạm pháp luật mới quy định về các vấn đề này",
+      "source_quote": "Ngưng hiệu lực thi hành khoản 8, khoản 9 và khoản 10 Điều 8 … cho đến ngày có hiệu lực thi hành của văn bản quy phạm pháp luật mới quy định về các vấn đề này."
+    }
+  ]
+}

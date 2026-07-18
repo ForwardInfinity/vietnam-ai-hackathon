@@ -1,0 +1,30 @@
+{
+  "artifact": {
+    "id": "art:CS-LS-01/SHB",
+    "doc_key": "CS-LS-01/SHB",
+    "doc_type": "noi_bo",
+    "issuer": "SHB.QLRR",
+    "owner": "Phòng Chính sách tín dụng",
+    "title": "Chính sách lãi suất cho vay nội bộ SHB (synthetic)",
+    "issued_date": "2023-12-15",
+    "effective_date": "2024-01-01",
+    "audience": "internal",
+    "ingested_at": "2024-01-05T00:00:00+00:00",
+    "synthetic": true
+  },
+  "nodes": [
+    {
+      "id": "node:CS-LS-01:muc:2",
+      "path": "muc:2",
+      "role": "rule",
+      "body": "Lãi suất cho vay ngắn hạn bằng đồng Việt Nam đối với lĩnh vực ưu tiên: áp dụng theo trần của NHNN, tối đa 4%/năm. Đơn vị kinh doanh không được vượt trần trong mọi trường hợp."
+    },
+    {
+      "id": "node:CS-LS-01:muc:3",
+      "path": "muc:3",
+      "role": "rule",
+      "body": "Khách hàng cá nhân vay phục vụ đời sống phải cung cấp báo cáo chứng minh thu nhập có xác nhận của cơ quan chi trả trong mọi trường hợp, kể cả khoản vay có mức giá trị nhỏ."
+    }
+  ],
+  "ops": []
+}

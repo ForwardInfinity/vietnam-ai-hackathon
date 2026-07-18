@@ -1,0 +1,34 @@
+{
+  "artifact": {
+    "id": "art:12/2024/TT-NHNN",
+    "doc_key": "12/2024/TT-NHNN",
+    "doc_type": "thong_tu",
+    "issuer": "NHNN",
+    "title": "Thông tư sửa đổi, bổ sung một số điều của Thông tư số 39/2016/TT-NHNN",
+    "issued_date": "2024-06-28",
+    "effective_date": "2024-07-01",
+    "audience": "public",
+    "ingested_at": "2024-06-29T00:00:00+00:00",
+    "synthetic": false
+  },
+  "nodes": [
+    {
+      "id": "node:12/2024:dieu:1/khoan:1",
+      "path": "dieu:1/khoan:1",
+      "role": "amending",
+      "body": "1. Sửa đổi, bổ sung Điều 7 như sau: \"Điều 7. Điều kiện vay vốn … khoản vay có mức giá trị nhỏ không phải có phương án sử dụng vốn khả thi …\""
+    }
+  ],
+  "ops": [
+    {
+      "id": "op:tt12-amend-d7",
+      "kind": "amend",
+      "seq": 1,
+      "source_node": "node:12/2024:dieu:1/khoan:1",
+      "target_node": "node:39/2016:dieu:7",
+      "new_text": "Tổ chức tín dụng xem xét, quyết định cho vay khi khách hàng có đủ các điều kiện sau đây: 1. Khách hàng là pháp nhân có năng lực pháp luật dân sự theo quy định của pháp luật; khách hàng là cá nhân từ đủ 18 tuổi trở lên có năng lực hành vi dân sự đầy đủ. 2. Nhu cầu vay vốn để sử dụng vào mục đích hợp pháp. 3. Có phương án sử dụng vốn khả thi; riêng khoản vay có mức giá trị nhỏ, khách hàng chỉ cần cung cấp thông tin tối thiểu về mục đích sử dụng vốn hợp pháp và khả năng tài chính. 4. Có khả năng tài chính để trả nợ. 5. Trường hợp cho vay bằng phương tiện điện tử, khách hàng đáp ứng quy định về nhận biết, xác minh thông tin nhận biết khách hàng. (bản TT12/2024)",
+      "valid_from": "2024-07-01",
+      "source_quote": "Sửa đổi, bổ sung Điều 7 như sau: \"Điều 7. Điều kiện vay vốn …\""
+    }
+  ]
+}

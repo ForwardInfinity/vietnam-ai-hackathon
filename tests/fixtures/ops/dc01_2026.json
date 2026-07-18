@@ -1,0 +1,26 @@
+{
+  "artifact": {
+    "id": "art:DC-01/2026",
+    "doc_key": "DC-01/2026",
+    "doc_type": "quyet_dinh",
+    "issuer": "NHNN",
+    "title": "Quyết định đính chính Thông tư số 28/2026/TT-NHNN (fixture synthetic)",
+    "issued_date": "2026-02-05",
+    "effective_date": "2026-02-05",
+    "audience": "public",
+    "ingested_at": "2026-02-06T00:00:00+00:00",
+    "synthetic": true
+  },
+  "nodes": [],
+  "ops": [
+    {
+      "id": "op:dc01-fix-d7a",
+      "kind": "dinh_chinh",
+      "seq": 1,
+      "target_node": "node:39/2016:dieu:7a",
+      "new_text": "Thời hạn thẩm định và quyết định cho vay là 10 ngày làm việc kể từ ngày nhận đủ hồ sơ.",
+      "valid_from": "2026-02-05",
+      "source_quote": "Đính chính Điều 7a Thông tư số 39/2016/TT-NHNN (bổ sung theo Thông tư 28/2026/TT-NHNN): \"07 ngày làm việc\" sửa thành \"10 ngày làm việc\"."
+    }
+  ]
+}

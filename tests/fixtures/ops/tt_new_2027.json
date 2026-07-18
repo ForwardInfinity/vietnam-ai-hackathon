@@ -1,0 +1,17 @@
+{
+  "artifact": {
+    "id": "art:05/2027/TT-NHNN",
+    "doc_key": "05/2027/TT-NHNN",
+    "doc_type": "thong_tu",
+    "issuer": "NHNN",
+    "title": "Thông tư quy định về những nhu cầu vốn không được cho vay, thay thế các nội dung đã ngưng hiệu lực theo Thông tư số 10/2023/TT-NHNN (fixture synthetic — 'văn bản QPPL mới')",
+    "issued_date": "2026-11-30",
+    "effective_date": "2027-01-01",
+    "audience": "public",
+    "ingested_at": "2026-12-01T00:00:00+00:00",
+    "synthetic": true,
+    "text": "Căn cứ Luật Ngân hàng Nhà nước… Thông tư này quy định về những nhu cầu vốn không được cho vay tại khoản 8, khoản 9, khoản 10 Điều 8 Thông tư số 39/2016/TT-NHNN đã ngưng hiệu lực theo Thông tư số 10/2023/TT-NHNN."
+  },
+  "nodes": [],
+  "ops": []
+}

@@ -1,0 +1,45 @@
+{
+  "artifact": {
+    "id": "art:39/2016/TT-NHNN",
+    "doc_key": "39/2016/TT-NHNN",
+    "doc_type": "thong_tu",
+    "issuer": "NHNN",
+    "title": "Thông tư quy định về hoạt động cho vay của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài đối với khách hàng",
+    "issued_date": "2016-12-30",
+    "effective_date": "2017-03-15",
+    "audience": "public",
+    "ingested_at": "2017-01-10T00:00:00+00:00",
+    "synthetic": false
+  },
+  "nodes": [
+    {
+      "id": "node:39/2016:dieu:2",
+      "path": "dieu:2",
+      "role": "definition",
+      "heading": "Giải thích từ ngữ",
+      "body": "Trong Thông tư này, các từ ngữ dưới đây được hiểu như sau: 1. Cho vay là hình thức cấp tín dụng, theo đó tổ chức tín dụng giao hoặc cam kết giao cho khách hàng một khoản tiền để sử dụng vào mục đích xác định trong một thời gian nhất định theo thỏa thuận với nguyên tắc có hoàn trả cả gốc và lãi. 3. Khách hàng vay vốn tại tổ chức tín dụng là pháp nhân, cá nhân."
+    },
+    {
+      "id": "node:39/2016:dieu:7",
+      "path": "dieu:7",
+      "role": "rule",
+      "heading": "Điều kiện vay vốn",
+      "body": "Tổ chức tín dụng xem xét, quyết định cho vay khi khách hàng có đủ các điều kiện sau đây: 1. Khách hàng là pháp nhân có năng lực pháp luật dân sự theo quy định của pháp luật; khách hàng là cá nhân từ đủ 18 tuổi trở lên có năng lực hành vi dân sự đầy đủ. 2. Nhu cầu vay vốn để sử dụng vào mục đích hợp pháp. 3. Có phương án sử dụng vốn khả thi. 4. Có khả năng tài chính để trả nợ."
+    },
+    {
+      "id": "node:39/2016:dieu:8",
+      "path": "dieu:8",
+      "role": "rule",
+      "heading": "Những nhu cầu vốn không được cho vay",
+      "body": "Tổ chức tín dụng không được cho vay đối với các nhu cầu vốn: 1. Để thực hiện các hoạt động đầu tư kinh doanh thuộc ngành, nghề cấm đầu tư kinh doanh. 5. Để mua vàng miếng. 6. Để trả nợ khoản cấp tín dụng tại chính tổ chức tín dụng cho vay, trừ trường hợp cho vay để thanh toán lãi tiền vay phát sinh trong quá trình thi công xây dựng công trình."
+    },
+    {
+      "id": "node:39/2016:dieu:13",
+      "path": "dieu:13",
+      "role": "rule",
+      "heading": "Lãi suất cho vay",
+      "body": "1. Tổ chức tín dụng và khách hàng thỏa thuận về lãi suất cho vay theo cung cầu vốn thị trường, nhu cầu vay vốn và mức độ tín nhiệm của khách hàng. 2. Trường hợp cho vay ngắn hạn bằng đồng Việt Nam phục vụ lĩnh vực ưu tiên, lãi suất cho vay ngắn hạn tối đa 4%/năm theo quyết định của Thống đốc Ngân hàng Nhà nước trong từng thời kỳ."
+    }
+  ],
+  "ops": []
+}

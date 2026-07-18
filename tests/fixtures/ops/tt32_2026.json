@@ -1,0 +1,38 @@
+{
+  "artifact": {
+    "id": "art:32/2026/TT-NHNN",
+    "doc_key": "32/2026/TT-NHNN",
+    "doc_type": "thong_tu",
+    "issuer": "NHNN",
+    "title": "Thông tư sửa đổi điều kiện vay vốn, có điều khoản chuyển tiếp hai tầng (fixture synthetic)",
+    "issued_date": "2026-05-15",
+    "effective_date": "2026-07-01",
+    "audience": "public",
+    "ingested_at": "2026-05-20T00:00:00+00:00",
+    "synthetic": true
+  },
+  "nodes": [
+    {
+      "id": "node:32/2026:dieu:2",
+      "path": "dieu:2",
+      "role": "transition",
+      "heading": "Quy định chuyển tiếp",
+      "body": "Hợp đồng tín dụng ký kết trước ngày Thông tư này có hiệu lực thi hành VÀ chưa được sửa đổi, bổ sung kể từ ngày đó được tiếp tục thực hiện theo quy định tại thời điểm ký kết."
+    }
+  ],
+  "ops": [
+    {
+      "id": "op:tt32-amend-d7",
+      "kind": "amend",
+      "seq": 1,
+      "target_node": "node:39/2016:dieu:7",
+      "new_text": "Tổ chức tín dụng xem xét, quyết định cho vay khi khách hàng có đủ các điều kiện sau đây: 1. Khách hàng là pháp nhân có năng lực pháp luật dân sự theo quy định của pháp luật; khách hàng là cá nhân từ đủ 18 tuổi trở lên có năng lực hành vi dân sự đầy đủ. 2. Nhu cầu vay vốn để sử dụng vào mục đích hợp pháp. 3. Có phương án sử dụng vốn khả thi; riêng khoản vay có mức giá trị nhỏ, khách hàng chỉ cần cung cấp thông tin tối thiểu về mục đích sử dụng vốn hợp pháp và khả năng tài chính. 4. Có khả năng tài chính để trả nợ. 5. Trường hợp cho vay bằng phương tiện điện tử, khách hàng đáp ứng quy định về nhận biết, xác minh thông tin nhận biết khách hàng và xác thực sinh trắc học đối với khách hàng cá nhân. (bản TT32/2026)",
+      "valid_from": "2026-07-01",
+      "scope_predicate": {
+        "contract_signed_before": "2026-07-01",
+        "not_amended_on_or_after": "2026-07-01"
+      },
+      "source_quote": "Sửa đổi, bổ sung Điều 7 như sau … Hợp đồng ký trước ngày Thông tư này có hiệu lực VÀ chưa được sửa đổi, bổ sung kể từ ngày đó tiếp tục thực hiện theo quy định tại thời điểm ký kết."
+    }
+  ]
+}

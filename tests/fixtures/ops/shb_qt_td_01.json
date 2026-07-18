@@ -1,0 +1,24 @@
+{
+  "artifact": {
+    "id": "art:QT-TD-01/SHB",
+    "doc_key": "QT-TD-01/SHB",
+    "doc_type": "noi_bo",
+    "issuer": "SHB.CSTD",
+    "owner": "Phòng Chính sách tín dụng",
+    "title": "Quy trình cho vay khách hàng SHB (synthetic)",
+    "issued_date": "2021-12-20",
+    "effective_date": "2022-01-01",
+    "audience": "internal",
+    "ingested_at": "2022-01-05T00:00:00+00:00",
+    "synthetic": true
+  },
+  "nodes": [
+    {
+      "id": "node:QT-TD-01:muc:3.2",
+      "path": "muc:3.2",
+      "role": "rule",
+      "body": "Điều kiện vay vốn: cán bộ tín dụng thẩm định theo Điều 7 Thông tư 39/2016/TT-NHNN và quy định của NHNN về hoạt động cho vay trong từng thời kỳ."
+    }
+  ],
+  "ops": []
+}

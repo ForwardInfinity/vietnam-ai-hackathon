@@ -1,0 +1,30 @@
+{
+  "artifact": {
+    "id": "art:11/2026/TT-NHNN",
+    "doc_key": "11/2026/TT-NHNN",
+    "doc_type": "thong_tu",
+    "issuer": "NHNN",
+    "title": "Thông tư omnibus sửa nhiều thông tư, hiệu lực phân kỳ theo chủ đề (fixture synthetic)",
+    "issued_date": "2026-01-15",
+    "effective_date": "2026-03-01",
+    "audience": "public",
+    "ingested_at": "2026-01-20T00:00:00+00:00",
+    "synthetic": true
+  },
+  "nodes": [
+    {
+      "id": "node:11/2026:dieu:5",
+      "path": "dieu:5",
+      "role": "rule",
+      "body": "Hồ sơ đề nghị cấp tín dụng đối với người đại diện theo pháp luật bao gồm Phiếu lý lịch tư pháp; yêu cầu nộp Phiếu lý lịch tư pháp áp dụng từ ngày 01/07/2026."
+    },
+    {
+      "id": "node:11/2026:dieu:9",
+      "path": "dieu:9",
+      "role": "effectivity",
+      "heading": "Hiệu lực thi hành",
+      "body": "Thông tư này có hiệu lực thi hành từ ngày 01/03/2026; riêng các quy định về Phiếu lý lịch tư pháp có hiệu lực thi hành từ ngày 01/07/2026."
+    }
+  ],
+  "ops": []
+}

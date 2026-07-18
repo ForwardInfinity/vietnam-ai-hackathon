@@ -1,0 +1,23 @@
+{
+  "artifact": {
+    "id": "art:22/2019/TT-NHNN",
+    "doc_key": "22/2019/TT-NHNN",
+    "doc_type": "thong_tu",
+    "issuer": "NHNN",
+    "title": "Thông tư quy định các giới hạn, tỷ lệ bảo đảm an toàn trong hoạt động của ngân hàng, chi nhánh ngân hàng nước ngoài",
+    "issued_date": "2019-11-15",
+    "effective_date": "2020-01-01",
+    "audience": "public",
+    "ingested_at": "2019-12-01T00:00:00+00:00",
+    "synthetic": false
+  },
+  "nodes": [
+    {
+      "id": "node:22/2019:dieu:20/khoan:2",
+      "path": "dieu:20/khoan:2",
+      "role": "rule",
+      "body": "Tổng tiền gửi quy định tại khoản 1 Điều này bao gồm: a) Tiền gửi của tổ chức trong nước và nước ngoài, không bao gồm tiền gửi các loại của Kho bạc Nhà nước; b) Tiền gửi của cá nhân."
+    }
+  ],
+  "ops": []
+}

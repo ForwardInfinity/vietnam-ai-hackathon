@@ -1,0 +1,33 @@
+{
+  "artifact": {
+    "id": "art:08/2026/TT-NHNN",
+    "doc_key": "08/2026/TT-NHNN",
+    "doc_type": "thong_tu",
+    "issuer": "NHNN",
+    "title": "Thông tư sửa đổi một số điều và bãi bỏ điều khoản sửa đổi của Thông tư số 26/2022/TT-NHNN (fixture synthetic)",
+    "issued_date": "2025-12-15",
+    "effective_date": "2026-01-01",
+    "audience": "public",
+    "ingested_at": "2025-12-20T00:00:00+00:00",
+    "synthetic": true
+  },
+  "nodes": [
+    {
+      "id": "node:08/2026:dieu:2",
+      "path": "dieu:2",
+      "role": "amending",
+      "body": "Bãi bỏ khoản 2 Điều 1 Thông tư số 26/2022/TT-NHNN kể từ ngày 01 tháng 01 năm 2026."
+    }
+  ],
+  "ops": [
+    {
+      "id": "op:tt08-repeal-tt26op",
+      "kind": "repeal",
+      "seq": 1,
+      "source_node": "node:08/2026:dieu:2",
+      "target_op": "op:tt26-amend-ldr",
+      "valid_from": "2026-01-01",
+      "source_quote": "Bãi bỏ khoản 2 Điều 1 Thông tư số 26/2022/TT-NHNN kể từ ngày 01 tháng 01 năm 2026."
+    }
+  ]
+}
