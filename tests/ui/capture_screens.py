@@ -109,7 +109,7 @@ def _shoot(chat_port: int, admin_port: int) -> None:
         radio("▶️ Replay")
         pg.wait_for_timeout(2000)
         pg.get_by_role("button", name=re.compile("Chạy replay")).click()
-        snap("04_admin_replay_stub_501", pause=3)
+        snap("04_admin_replay_report", pause=3)
 
         radio("🗂 Backlog")
         snap("05_admin_backlog", pause=3.5)

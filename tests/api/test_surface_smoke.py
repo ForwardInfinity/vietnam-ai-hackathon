@@ -122,10 +122,10 @@ def test_eval_run_501_when_f7_missing():
     assert "F7" in r.json()["detail"]
 
 
-def test_replay_501_when_f4_missing():
+def test_replay_engine_wired_or_stub(dead_db):
+    """F4 đã merge → adapter thật (DB tắt → 503); nếu engine vắng → 501 TODO."""
     r = client.post("/v1/admin/replay", headers=CURATOR)
-    assert r.status_code == 501
-    assert "F4" in r.json()["detail"]
+    assert r.status_code in (501, 503)
 
 
 def test_bad_role_header_rejected():

@@ -97,20 +97,28 @@ def seed(conn: psycopg.Connection) -> None:
         )
 
     # --- nodes + alias -------------------------------------------------------
+    # page_anchor.heading/body = text gốc cho engine F4 fold (engine/README — default_base_text);
+    # node do INSERT sinh (k8) để body None: base = new_text của op insert.
     nodes = [
-        (N_D8K2, "sha-tt39", "dieu:8/khoan:2", "rule", "Điều 8 khoản 2"),
-        (N_D2K5, "sha-tt39", "dieu:2/khoan:5", "definition", "Điều 2 khoản 5 (định nghĩa)"),
-        (N_D8K8, "sha-tt39", "dieu:8/khoan:8", "rule", "Điều 8 khoản 8 (bổ sung bởi TT06)"),
-        (N_TT06_AMD, "sha-tt06", "dieu:1/khoan:3", "amending", "Điều 1 khoản 3 (điều khoản sửa đổi)"),
-        (N_QT3, "sha-qt01", "dieu:3", "rule", "Điều 3 QT-TD-01"),
-        (N_QT4, "sha-qt01", "dieu:4", "rule", "Điều 4 QT-TD-01"),
-        (N_QT5, "sha-qt01", "dieu:5", "rule", "Điều 5 QT-TD-01"),
+        (N_D8K2, "sha-tt39", "dieu:8/khoan:2", "rule", "Điều 8 khoản 2", D8K2_V1),
+        (N_D2K5, "sha-tt39", "dieu:2/khoan:5", "definition", "Điều 2 khoản 5 (định nghĩa)",
+         "Cho vay phục vụ nhu cầu đời sống là việc TCTD cho vay để thanh toán các chi phí "
+         "cho mục đích tiêu dùng, sinh hoạt."),
+        (N_D8K8, "sha-tt39", "dieu:8/khoan:8", "rule", "Điều 8 khoản 8 (bổ sung bởi TT06)", None),
+        (N_TT06_AMD, "sha-tt06", "dieu:1/khoan:3", "amending", "Điều 1 khoản 3 (điều khoản sửa đổi)",
+         "Bổ sung khoản 8 vào Điều 8: \u201c" + D8K8_TEXT + "\u201d"),
+        (N_QT3, "sha-qt01", "dieu:3", "rule", "Điều 3 QT-TD-01", QT_BODY),
+        (N_QT4, "sha-qt01", "dieu:4", "rule", "Điều 4 QT-TD-01", QT_BODY),
+        (N_QT5, "sha-qt01", "dieu:5", "rule", "Điều 5 QT-TD-01", QT_BODY),
     ]
-    for nid, art, path, role, label in nodes:
+    for nid, art, path, role, label, base_body in nodes:
+        anchor = {"heading": label}
+        if base_body is not None:
+            anchor["body"] = base_body
         conn.execute(
-            """INSERT INTO node (id, artifact_id, path, label, role)
-               VALUES (%s,%s,%s,%s,%s) ON CONFLICT (id) DO NOTHING""",
-            (nid, art, path, label, role),
+            """INSERT INTO node (id, artifact_id, path, label, role, page_anchor)
+               VALUES (%s,%s,%s,%s,%s,%s) ON CONFLICT (id) DO NOTHING""",
+            (nid, art, path, label, role, json.dumps(anchor, ensure_ascii=False)),
         )
         doc_key = {"sha-tt39": "39/2016/TT-NHNN", "sha-tt06": "06/2023/TT-NHNN",
                    "sha-qt01": "QT-TD-01", "sha-qt02": "QT-TD-02"}[art]
